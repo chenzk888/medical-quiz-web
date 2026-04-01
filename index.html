@@ -661,7 +661,7 @@
     const LS_API_KEY = "medicalQuiz_deepseek_api_key";
     const LS_LEARN_STATS = "medicalQuiz_learnStats_v1";
 
-    const questions = Array.isArray(window.questions) ? window.questions : [];
+  const questions = window.questions || []; 
 
     const examTabsEl = document.getElementById("examTabs");
     const subjectListEl = document.getElementById("subjectList");
