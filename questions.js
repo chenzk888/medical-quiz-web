@@ -554,5 +554,17 @@ window.questions = [
     difficulty: 2,
     year: 2023,
     keyPoint: "左心衰以肺循环淤血为主，典型表现为呼吸困难"
-  }
+  }，,
+{
+  id: 72,
+  examType: "临床执业医师",
+  subject: "外科学",
+  chapter: "普外科",
+  question: "测试题：急性阑尾炎典型表现是？",
+  options: ["转移性右下腹痛", "全腹痛", "左下腹痛", "脐周痛"],
+  answer: 0,
+  difficulty: 2,
+  year: 2024,
+  keyPoint: "测试考点"
+}
 ];
