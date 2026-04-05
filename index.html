@@ -286,7 +286,21 @@
 
     .option-btn.selected .option-letter,
     .option-btn.correct .option-letter,
-    .option-btn.wrong .option-letter {
+    .option-btn.wrong .option-letter {/* 手机触控增强 - 追加到刚才的 CSS 后面 */
+.option-btn {
+  transition: all 0.2s ease !important;
+}
+
+.option-btn:active {
+  transform: scale(0.98) !important;
+  background-color: #f0f7ff !important;
+}
+
+/* 震动反馈支持 */
+@media (prefers-reduced-motion: no-preference) {
+  .option-btn.correct { animation: pop 0.3s ease; }
+  .option-btn.wrong { animation: shake 0.4s ease; }
+}
       background: rgba(255,255,255,0.3);
     }
 
@@ -897,40 +911,46 @@
 
     // 选择答案
     function selectOption(selected) {
-      if (hasAnswered) return;
-      hasAnswered = true;
-      
-      const correct = currentQuestion.answer;
-      const buttons = document.querySelectorAll('.option-btn');
-      
-      // 标记选中
-      buttons[selected].classList.add('selected');
-      
-      // 显示正确答案
-      buttons[correct].classList.add('correct');
-      
-      // 如果答错，标记错误
-      if (selected !== correct) {
-        buttons[selected].classList.add('wrong');
-      }
-
-      // 显示结果
-      const resultDiv = document.getElementById('result');
-      resultDiv.style.display = 'block';
-      resultDiv.className = `result ${selected === correct ? 'correct' : 'wrong'}`;
-      resultDiv.innerHTML = selected === correct 
-        ? '✅ 回答正确！' 
-        : `❌ 回答错误，正确答案是 ${String.fromCharCode(65+correct)}`;
-
-      // 显示 AI 解析按钮
-      document.getElementById('aiSection').style.display = 'block';
-      
-      // 显示本地解析
-      showLocalAnalysis();
-
-      // 创建粒子效果
-      createParticles(event.clientX, event.clientY);
+  if (hasAnswered) return;
+  hasAnswered = true;
+  
+  const correct = currentQuestion.answer;
+  const buttons = document.querySelectorAll('.option-btn');
+  
+  // 1. 先显示选中（蓝色）
+  buttons[selected].classList.add('selected');
+  
+  // 2. 手机震动反馈（50毫秒）
+  if (navigator.vibrate) navigator.vibrate(50);
+  
+  // 3. 延迟 300ms 显示对错（增加悬念）
+  setTimeout(() => {
+    // 显示正确答案（绿色）
+    buttons[correct].classList.add('correct');
+    
+    // 如果答错，显示红色 + 震动
+    if (selected !== correct) {
+      buttons[selected].classList.add('wrong');
+      if (navigator.vibrate) navigator.vibrate([50, 100, 50]); // 震动模式
+    } else {
+      // 答对也轻微震动
+      if (navigator.vibrate) navigator.vibrate(30);
     }
+  }, 300);
+  
+  // 4. 显示结果（保留你原来的代码）
+  const resultDiv = document.getElementById('result');
+  resultDiv.style.display = 'block';
+  resultDiv.className = `result ${selected === correct ? 'correct' : 'wrong'}`;
+  resultDiv.innerHTML = selected === correct 
+    ? '✅ 回答正确！' 
+    : `❌ 回答错误，正确答案是 ${String.fromCharCode(65+correct)}`;
+
+  // 5. 显示 AI 按钮和解析（保留你原来的）
+  document.getElementById('aiSection').style.display = 'block';
+  showLocalAnalysis();
+  createParticles(event.clientX, event.clientY);
+}
 
     // 显示本地解析
     function showLocalAnalysis() {
