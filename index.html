@@ -991,6 +991,9 @@
     </button>
   </div>
 
+  <script src="questions/临床执业医师/questions.js"></script>
+  <script src="questions/临床医学考研/questions.js"></script>
+  <script src="questions/护师资格考试/questions.js"></script>
   <script src="questions.js"></script>
   <script>
     // ========== 全局状态 ==========
@@ -1014,7 +1017,7 @@
     // ========== 初始化 ==========
     function init() {
       if (questions.length === 0) {
-        document.getElementById('questionText').textContent = '题库加载失败，请检查 questions.js 文件';
+        document.getElementById('questionText').textContent = '题库加载失败，请检查 questions/ 分文件与根目录 questions.js 是否齐全';
         return;
       }
       
