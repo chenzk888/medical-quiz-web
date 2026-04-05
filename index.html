@@ -495,11 +495,24 @@
       display: block;
     }
 
-    /* 评论区 */
+    /* 评论区 - 默认隐藏，答完题显示 */
     .comment-section {
       margin-top: 20px;
       border-top: 1px solid #e8e8ed;
       padding-top: 16px;
+      display: none; /* 默认隐藏 */
+      animation: slideUp 0.4s ease;
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     .comment-title {
@@ -516,6 +529,11 @@
       margin-bottom: 10px;
       font-size: 14px;
       line-height: 1.5;
+      transition: transform 0.2s;
+    }
+
+    .comment-item:active {
+      transform: scale(0.98);
     }
 
     .comment-header {
@@ -534,6 +552,12 @@
     .comment-likes {
       color: #ff6b6b;
       cursor: pointer;
+      user-select: none;
+    }
+
+    .comment-likes.liked {
+      color: #ff3b30;
+      font-weight: 600;
     }
 
     /* 解析区域 */
@@ -927,9 +951,9 @@
           <div class="key-point" id="keyPoint"></div>
         </div>
 
-        <!-- 评论区 -->
+        <!-- 评论区 - 默认隐藏，答完题显示 -->
         <div class="comment-section" id="commentSection">
-          <div class="comment-title">💡 学霸记忆口诀</div>
+          <div class="comment-title">💡 学霸记忆口诀（点赞收藏）</div>
           <div id="commentsList"></div>
         </div>
 
@@ -980,7 +1004,7 @@
     let currentMode = 'practice';
     let fastTimer = null;
     let fastTimeLeft = 30;
-    let testAnswers = []; // 测试模式答题记录
+    let testAnswers = [];
     let dailyProgress = {
       completed: 0,
       wrongReviewed: 0,
@@ -1029,12 +1053,10 @@
       const lastCheck = localStorage.getItem('lastCheckDate');
       
       if (lastCheck !== today) {
-        // 新的一天，重置任务
         dailyProgress = { completed: 0, wrongReviewed: 0, weakPointDone: false };
         localStorage.setItem('dailyProgress', JSON.stringify(dailyProgress));
         localStorage.setItem('lastCheckDate', today);
         
-        // 计算连续打卡
         const lastDate = new Date(lastCheck);
         const diffDays = Math.floor((new Date() - lastDate) / (1000 * 60 * 60 * 24));
         let streak = parseInt(localStorage.getItem('streakDays') || '0');
@@ -1055,7 +1077,6 @@
       const streak = localStorage.getItem('streakDays') || '1';
       document.getElementById('streakDays').textContent = `🔥 连续 ${streak} 天`;
       
-      // 更新任务1
       const task1 = document.getElementById('task1');
       if (dailyProgress.completed >= 20) {
         task1.classList.add('completed');
@@ -1076,24 +1097,20 @@
       currentMode = mode;
       localStorage.setItem('preferredMode', mode);
       
-      // 更新按钮样式
       document.querySelectorAll('.mode-btn').forEach(btn => {
         btn.classList.toggle('active', btn.dataset.mode === mode);
       });
       
-      // 清除计时器
       if (fastTimer) {
         clearInterval(fastTimer);
         document.getElementById('fastTimer').style.display = 'none';
       }
       
-      // 重置测试记录
       if (mode === 'test') {
         testAnswers = [];
         alert('📝 测试模式：共20题，做完统一出分，中途不能查看答案');
       }
       
-      // 重新渲染当前题
       renderQuestion();
     }
 
@@ -1111,7 +1128,6 @@
         
         if (fastTimeLeft <= 0) {
           clearInterval(fastTimer);
-          // 时间到自动选第一个并下一题
           if (!hasAnswered) {
             selectOption(0);
             setTimeout(() => nextQuestion(), 1000);
@@ -1202,19 +1218,16 @@
       currentQuestion = filteredQuestions[currentIndex];
       hasAnswered = false;
       
-      // 恢复卡片结构
       const card = document.getElementById('questionCard');
       card.className = 'question-card' + (currentMode === 'memory' ? ' memory-mode' : '');
       
-      // 隐藏元素（根据模式）
       const showAnalysis = currentMode === 'memory';
-      const hideResult = currentMode === 'test';
       
       card.innerHTML = `
         <div class="question-meta" id="questionMeta"></div>
         <div class="question-text" id="questionText"></div>
         <div class="options" id="options"></div>
-        <div class="result" id="result" style="display: ${hideResult ? 'none' : 'none'}"></div>
+        <div class="result" id="result" style="display: none;"></div>
         
         <div class="ai-section" id="aiSection" style="display: none;">
           <button class="ai-btn" id="aiBtn" onclick="getAIAnalysis()">
@@ -1232,7 +1245,8 @@
           <div class="key-point" id="keyPoint"></div>
         </div>
 
-        <div class="comment-section" id="commentSection">
+        <!-- 评论区 - 默认隐藏 -->
+        <div class="comment-section" id="commentSection" style="display: none;">
           <div class="comment-title">💡 学霸记忆口诀（点赞收藏）</div>
           <div id="commentsList"></div>
         </div>
@@ -1271,9 +1285,6 @@
         </button>
       `).join('');
       document.getElementById('options').innerHTML = optionsHtml;
-
-      // 加载评论区（模拟数据）
-      loadComments();
       
       // 背题模式直接显示解析
       if (currentMode === 'memory') {
@@ -1286,31 +1297,51 @@
       }
     }
 
-    // ========== 评论区 ==========
-    function loadComments() {
-      // 模拟评论数据，后期可接入后端
-      const comments = [
-        { author: '@协和学长', content: '口诀：下壁心梗看ⅡⅢaVF，前壁找V1-V4，后壁加做V7-V9！', likes: 234 },
-        { author: '@考研上岸', content: 'ST段抬高是梗死，压低是缺血，记住这个就不会错。', likes: 189 },
-        { author: '@实习医生', content: '这道题我错三次了，终于记住了😭', likes: 56 }
+    // ========== 显示评论区（答完题调用） ==========
+    function showComments() {
+      const section = document.getElementById('commentSection');
+      const list = document.getElementById('commentsList');
+      
+      // 获取当前题目的评论，如果没有就用默认的
+      const comments = currentQuestion.comments || [
+        { author: "@医学生", content: "这道题重点掌握临床表现和诊断标准", likes: 12 },
+        { author: "@考证党", content: "历年真题常考，建议背下来", likes: 8 }
       ];
       
-      document.getElementById('commentsList').innerHTML = comments.map(c => `
+      list.innerHTML = comments.map((c, idx) => `
         <div class="comment-item">
           <div class="comment-header">
             <span class="comment-author">${c.author}</span>
-            <span class="comment-likes" onclick="likeComment(this)">❤️ ${c.likes}</span>
+            <span class="comment-likes" onclick="likeComment(this, ${idx})" data-idx="${idx}">❤️ ${c.likes}</span>
           </div>
           <div>${c.content}</div>
         </div>
       `).join('');
+      
+      // 显示评论区（带动画）
+      section.style.display = 'block';
     }
 
-    function likeComment(el) {
+    // ========== 点赞功能（防重复） ==========
+    function likeComment(el, idx) {
+      // 检查是否已点赞（用题目ID+评论索引作为key）
+      const likeKey = `liked_${currentQuestion.id}_${idx}`;
+      if (localStorage.getItem(likeKey)) {
+        // 已点赞，再点取消
+        localStorage.removeItem(likeKey);
+        el.classList.remove('liked');
+        const match = el.textContent.match(/\d+/);
+        const current = match ? parseInt(match[0]) : 0;
+        el.textContent = `❤️ ${current - 1}`;
+        return;
+      }
+      
+      // 未点赞，添加点赞
+      localStorage.setItem(likeKey, 'true');
+      el.classList.add('liked');
       const match = el.textContent.match(/\d+/);
       const current = match ? parseInt(match[0]) : 0;
       el.textContent = `❤️ ${current + 1}`;
-      el.style.color = '#ff3b30';
       createParticles(event.clientX, event.clientY);
     }
 
@@ -1335,7 +1366,6 @@
         
         buttons[selected].classList.add('selected');
         
-        // 测试模式自动下一题，不显示对错
         setTimeout(() => {
           if (currentIndex < filteredQuestions.length - 1 && testAnswers.length < 20) {
             nextQuestion();
@@ -1357,8 +1387,6 @@
         if (selected !== correct) {
           buttons[selected].classList.add('wrong');
           if (navigator.vibrate) navigator.vibrate([50, 100, 50]);
-          
-          // 记录错题
           saveWrongQuestion(currentQuestion);
         } else {
           if (navigator.vibrate) navigator.vibrate(30);
@@ -1374,6 +1402,9 @@
         
         document.getElementById('aiSection').style.display = 'block';
         showLocalAnalysis();
+        
+        // 关键：显示评论区（每道题不同口诀）
+        showComments();
         
         // 快速模式自动下一题
         if (currentMode === 'fast') {
@@ -1476,7 +1507,6 @@
         `答对 ${correct} 题 / 共 ${total} 题 · 正确率 ${score}%`;
       document.getElementById('testSummary').classList.add('show');
       
-      // 保存测试记录
       localStorage.setItem('lastTestScore', score);
     }
 
@@ -1490,7 +1520,6 @@
     function nextQuestion() {
       if (filteredQuestions.length === 0) return;
       
-      // 滑动动画
       const card = document.getElementById('questionCard');
       card.classList.add('sliding-left');
       
@@ -1515,7 +1544,7 @@
         alert('暂无错题记录，快去刷题吧！');
         return;
       }
-      alert(`📚 错题本\n\n共记录 ${wrongs.length} 道错题\n\n功能提示：点击"重置"后选择"错题本"科目可专门复习错题`);
+      alert(`📚 错题本\n\n共记录 ${wrongs.length} 道错题`);
     }
 
     function resetProgress() {
@@ -1572,21 +1601,17 @@
     // ========== 触摸滑动 ==========
     function initTouchEvents() {
       let touchStartX = 0;
-      let touchEndX = 0;
       
       document.addEventListener('touchstart', (e) => {
         touchStartX = e.changedTouches[0].screenX;
       }, {passive: true});
       
       document.addEventListener('touchend', (e) => {
-        touchEndX = e.changedTouches[0].screenX;
+        const touchEndX = e.changedTouches[0].screenX;
         const diff = touchStartX - touchEndX;
         
-        if (Math.abs(diff) > 50) {
-          if (diff > 0 && hasAnswered) {
-            // 左滑下一题
-            nextQuestion();
-          }
+        if (Math.abs(diff) > 50 && diff > 0 && hasAnswered) {
+          nextQuestion();
         }
       }, {passive: true});
       
