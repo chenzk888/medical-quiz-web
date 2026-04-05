@@ -13,6 +13,10 @@
  * - difficulty: 难度 1-5
  * - year: 真题年份（可选）
  * - keyPoint: 核心考点提示（展示与 AI 解析参考）
+ * - comments: 学霸口诀评论（新增字段）
+ *   - author: 评论作者
+ *   - content: 口诀内容
+ *   - likes: 点赞数
  */
 window.questions = [
   {
@@ -25,7 +29,14 @@ window.questions = [
     answer: 1,
     difficulty: 2,
     year: 2023,
-    keyPoint: "下壁心梗对应II、III、aVF导联ST段抬高，与心绞痛一过性缺血鉴别。"
+    keyPoint: "下壁心梗对应II、III、aVF导联ST段抬高，与心绞痛一过性缺血鉴别。",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 下壁心梗看三导，II三aVF别忘掉；ST抬高是梗死，鉴别心绞痛一条。",
+        likes: 269
+      }
+    ]
   },
   {
     id: 2,
@@ -37,7 +48,14 @@ window.questions = [
     answer: 2,
     difficulty: 2,
     year: 2022,
-    keyPoint: "实变区叩浊、语颤增强、可闻及支气管呼吸音（肺实变三联）。"
+    keyPoint: "实变区叩浊、语颤增强、可闻及支气管呼吸音（肺实变三联）。",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 肺实变有三联，浊音语颤呼吸现；叩诊浊语颤强，支气管呼吸音最响。",
+        likes: 349
+      }
+    ]
   },
   {
     id: 3,
@@ -49,7 +67,14 @@ window.questions = [
     answer: 1,
     difficulty: 3,
     year: 2021,
-    keyPoint: "ACS双联抗血小板：阿司匹林联合P2Y12抑制剂为常规起始方案。"
+    keyPoint: "ACS双联抗血小板：阿司匹林联合P2Y12抑制剂为常规起始方案。",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: ACS抗血小板，阿司匹林是标配；P2Y12来联合，双抗治疗是常规。",
+        likes: 422
+      }
+    ]
   },
   {
     id: 4,
@@ -61,7 +86,14 @@ window.questions = [
     answer: 0,
     difficulty: 2,
     year: 2023,
-    keyPoint: "无禁忌时2型糖尿病一线口服首选二甲双胍。"
+    keyPoint: "无禁忌时2型糖尿病一线口服首选二甲双胍。",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 二型糖尿首选用，二甲双胍一线药；饮食运动三月后，血糖不降它出手。",
+        likes: 174
+      }
+    ]
   },
   {
     id: 5,
@@ -73,7 +105,14 @@ window.questions = [
     answer: 1,
     difficulty: 3,
     year: 2020,
-    keyPoint: "去极化上升支由电压门控Na+通道开放、Na+快速内流形成。"
+    keyPoint: "去极化上升支由电压门控Na+通道开放、Na+快速内流形成。",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 动作电位上升支，钠离子内流是主；去极化来快又急，钠通道开是正理。",
+        likes: 283
+      }
+    ]
   },
   {
     id: 6,
@@ -85,7 +124,14 @@ window.questions = [
     answer: 0,
     difficulty: 4,
     year: 2021,
-    keyPoint: "有效滤过压=(毛细血管血压+组织液胶渗)-(血浆胶渗+组织静水压)；毛细血管血压常为主要变量。"
+    keyPoint: "有效滤过压=(毛细血管血压+组织液胶渗)-(血浆胶渗+组织静水压)；毛细血管血压常为主要变量。",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 有效滤过压计算，毛细血压加组胶；减去血浆胶渗压，再减组织静水压。",
+        likes: 207
+      }
+    ]
   },
   {
     id: 7,
@@ -97,7 +143,14 @@ window.questions = [
     answer: 0,
     difficulty: 3,
     year: 2019,
-    keyPoint: "气性坏疽：手术彻底清创引流+大剂量青霉素，高压氧为辅助。"
+    keyPoint: "气性坏疽：手术彻底清创引流+大剂量青霉素，高压氧为辅助。",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 气性坏疽要清创，青霉素大剂量用；高压氧是辅助法，彻底引流最重要。",
+        likes: 226
+      }
+    ]
   },
   {
     id: 8,
@@ -109,7 +162,14 @@ window.questions = [
     answer: 1,
     difficulty: 4,
     year: 2022,
-    keyPoint: "休克早期交感兴奋，微血管收缩，微循环少灌少流、灌少于流。"
+    keyPoint: "休克早期交感兴奋，微血管收缩，微循环少灌少流、灌少于流。",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 休克早期交感兴，血管收缩少灌流；少灌少流灌少于，微循环内缺血愁。",
+        likes: 185
+      }
+    ]
   },
   {
     id: 9,
@@ -121,7 +181,14 @@ window.questions = [
     answer: 1,
     difficulty: 2,
     year: 2023,
-    keyPoint: "已开无菌包未污染，记录开包时间，24小时内有效。"
+    keyPoint: "已开无菌包未污染，记录开包时间，24小时内有效。",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 无菌包开二十四，超过期限不再使；记录时间要牢记，污染可疑必须弃。",
+        likes: 195
+      }
+    ]
   },
   {
     id: 10,
@@ -133,7 +200,14 @@ window.questions = [
     answer: 1,
     difficulty: 1,
     year: 2022,
-    keyPoint: "成人腋温正常约36.0-37.0℃；口温、肛温略高。"
+    keyPoint: "成人腋温正常约36.0-37.0℃；口温、肛温略高。",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 腋温正常三十六，零到三七是范围；口温肛温稍高点，测量部位要记全。",
+        likes: 405
+      }
+    ]
   },
   {
     id: 11,
@@ -145,7 +219,14 @@ window.questions = [
     answer: 0,
     difficulty: 3,
     year: 2021,
-    keyPoint: "左心衰肺淤血：夜间平卧回心血量增加，阵发性夜间呼吸困难典型。"
+    keyPoint: "左心衰肺淤血：夜间平卧回心血量增加，阵发性夜间呼吸困难典型。",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 左心衰夜间发作，呼吸困难阵发性；回心血量增加致，端坐呼吸可减轻。",
+        likes: 167
+      }
+    ]
   },
   {
     id: 12,
@@ -157,7 +238,14 @@ window.questions = [
     answer: 1,
     difficulty: 2,
     year: 2020,
-    keyPoint: "胰岛素注射应部位轮换，避免脂肪增生或萎缩。"
+    keyPoint: "胰岛素注射应部位轮换，避免脂肪增生或萎缩。",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 胰岛素打皮下，部位轮换很重要；固定一处脂肪硬，轮换避免并发症。",
+        likes: 272
+      }
+    ]
   },
   {
     id: 13,
@@ -169,7 +257,14 @@ window.questions = [
     answer: 1,
     difficulty: 2,
     year: 2023,
-    keyPoint: "利尿剂→排钾→低钾血症"
+    keyPoint: "利尿剂→排钾→低钾血症",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 利尿剂用后排钾，低钾血症最常见；监测电解质重要，及时补钾莫迟缓。",
+        likes: 421
+      }
+    ]
   },
   {
     id: 14,
@@ -181,7 +276,14 @@ window.questions = [
     answer: 1,
     difficulty: 3,
     year: 2024,
-    keyPoint: "静息电位主要由K+外流形成"
+    keyPoint: "静息电位主要由K+外流形成",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 静息电位钾主导，钾离子外流来形成；接近钾的平衡位，负值七十左右定。",
+        likes: 265
+      }
+    ]
   },
   {
     id: 15,
@@ -193,7 +295,14 @@ window.questions = [
     answer: 1,
     difficulty: 2,
     year: 2023,
-    keyPoint: "糖尿病低血糖诊断标准<3.9"
+    keyPoint: "糖尿病低血糖诊断标准<3.9",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 糖尿患者低血糖，三点九是警戒线；普通人二点八，标准不同要分辨。",
+        likes: 183
+      }
+    ]
   },
   {
     id: 16,
@@ -205,7 +314,14 @@ window.questions = [
     answer: 1,
     difficulty: 1,
     year: 2023,
-    keyPoint: "血钾正常值3.5-5.5，低于3.5低钾，高于5.5高钾"
+    keyPoint: "血钾正常值3.5-5.5，低于3.5低钾，高于5.5高钾",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 血钾三点五到五，低于三点五低钾补；高于五点五高钾急，心电图改变要关注。",
+        likes: 130
+      }
+    ]
   },
   {
     id: 17,
@@ -217,7 +333,14 @@ window.questions = [
     answer: 2,
     difficulty: 2,
     year: 2024,
-    keyPoint: "COPD标志性症状是进行性加重的呼吸困难"
+    keyPoint: "COPD标志性症状是进行性加重的呼吸困难",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: COPD标志性症，呼吸困难进行性；咳嗽咳痰也常见，气短最是要记清。",
+        likes: 424
+      }
+    ]
   },
   {
     id: 18,
@@ -229,7 +352,14 @@ window.questions = [
     answer: 1,
     difficulty: 3,
     year: 2023,
-    keyPoint: "高血压+糖尿病目标<130/80，保护靶器官"
+    keyPoint: "高血压+糖尿病目标<130/80，保护靶器官",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 高压合并糖尿病，目标一三零八零；严格控压保靶器，心脑肾并发症防。",
+        likes: 433
+      }
+    ]
   },
   {
     id: 19,
@@ -241,7 +371,14 @@ window.questions = [
     answer: 2,
     difficulty: 3,
     year: 2024,
-    keyPoint: "食管胃底静脉曲张是门脉高压的特征性表现"
+    keyPoint: "食管胃底静脉曲张是门脉高压的特征性表现",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 门脉高压诊价值，食管胃底曲张看；腹水脾大也常见，静脉曲张特征现。",
+        likes: 202
+      }
+    ]
   },
   {
     id: 20,
@@ -253,7 +390,14 @@ window.questions = [
     answer: 1,
     difficulty: 2,
     year: 2023,
-    keyPoint: "肺下界：锁骨中线第6肋间，腋中线第8肋间，肩胛线第10肋间"
+    keyPoint: "肺下界：锁骨中线第6肋间，腋中线第8肋间，肩胛线第10肋间",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 肺下界锁六腋八，肩胛线上十肋下；正常叩诊要记牢，浊音改变提示病。",
+        likes: 137
+      }
+    ]
   },
   {
     id: 21,
@@ -265,7 +409,14 @@ window.questions = [
     answer: 2,
     difficulty: 4,
     year: 2024,
-    keyPoint: "心房收缩期末，左心室充盈量最大，容积最大"
+    keyPoint: "心房收缩期末，左心室充盈量最大，容积最大",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 左室容积最大时，心房收缩期末至；此时充盈量最多，等容收缩即将始。",
+        likes: 445
+      }
+    ]
   },
   {
     id: 22,
@@ -277,7 +428,14 @@ window.questions = [
     answer: 1,
     difficulty: 3,
     year: 2023,
-    keyPoint: "嘌呤终产物是尿酸，嘧啶终产物是β-丙氨酸和NH3"
+    keyPoint: "嘌呤终产物是尿酸，嘧啶终产物是β-丙氨酸和NH3",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 嘌呤分解终产物，尿酸形成要记牢；痛风因此来发作，嘧啶产物不同道。",
+        likes: 382
+      }
+    ]
   },
   {
     id: 23,
@@ -289,7 +447,14 @@ window.questions = [
     answer: 2,
     difficulty: 3,
     year: 2024,
-    keyPoint: "异型性是判断良恶性的主要组织学依据"
+    keyPoint: "异型性是判断良恶性的主要组织学依据",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 判断肿瘤良恶性，异型性是主依据；大小形状核浆比，恶性异型更显著。",
+        likes: 123
+      }
+    ]
   },
   {
     id: 24,
@@ -301,7 +466,14 @@ window.questions = [
     answer: 2,
     difficulty: 3,
     year: 2023,
-    keyPoint: "交感神经兴奋抑制胃肠蠕动，副交感神经兴奋增强胃肠蠕动"
+    keyPoint: "交感神经兴奋抑制胃肠蠕动，副交感神经兴奋增强胃肠蠕动",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 交感神经兴奋时，胃肠蠕动受抑制；战斗逃跑反应使，消化吸收暂放置。",
+        likes: 136
+      }
+    ]
   },
   {
     id: 25,
@@ -313,7 +485,14 @@ window.questions = [
     answer: 0,
     difficulty: 2,
     year: 2024,
-    keyPoint: "氨的主要去路是在肝脏合成尿素，经肾脏排出"
+    keyPoint: "氨的主要去路是在肝脏合成尿素，经肾脏排出",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 体内氨的去路，肝脏合成尿素；肾脏排出体外，肝功不全氨中毒。",
+        likes: 159
+      }
+    ]
   },
   {
     id: 26,
@@ -325,7 +504,14 @@ window.questions = [
     answer: 1,
     difficulty: 1,
     year: 2023,
-    keyPoint: "成人输液滴速40-60滴/分，儿童20-40滴/分"
+    keyPoint: "成人输液滴速40-60滴/分，儿童20-40滴/分",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 成人输液四十到六十，每分钟滴要适宜；儿童老年二十到四十，根据病情调整速。",
+        likes: 208
+      }
+    ]
   },
   {
     id: 27,
@@ -337,7 +523,14 @@ window.questions = [
     answer: 0,
     difficulty: 2,
     year: 2024,
-    keyPoint: "心衰患者限钠<2g/d，减轻水钠潴留"
+    keyPoint: "心衰患者限钠<2g/d，减轻水钠潴留",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 心力衰竭限钠盐，每天少于两克限；水钠潴留会加重，饮食控制很要紧。",
+        likes: 372
+      }
+    ]
   },
   {
     id: 28,
@@ -349,7 +542,14 @@ window.questions = [
     answer: 2,
     difficulty: 1,
     year: 2023,
-    keyPoint: "咀嚼片需嚼碎后服用，利于吸收"
+    keyPoint: "咀嚼片需嚼碎后服用，利于吸收",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 咀嚼片要嚼碎吃，吞咽不利吸收差；肠溶缓释莫嚼碎，否则药效会打折。",
+        likes: 435
+      }
+    ]
   },
   {
     id: 29,
@@ -361,7 +561,14 @@ window.questions = [
     answer: 3,
     difficulty: 2,
     year: 2024,
-    keyPoint: "缩唇呼吸增加气道内压，防止呼气时小气道过早塌陷"
+    keyPoint: "缩唇呼吸增加气道内压，防止呼气时小气道过早塌陷",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: COPD缩唇呼吸，防止小气道塌陷；增加气道内压力，呼气更畅不费力。",
+        likes: 434
+      }
+    ]
   },
   {
     id: 30,
@@ -373,7 +580,14 @@ window.questions = [
     answer: 3,
     difficulty: 2,
     year: 2023,
-    keyPoint: "未戴手套的手只能接触手套翻折内面（外面为无菌区）"
+    keyPoint: "未戴手套的手只能接触手套翻折内面（外面为无菌区）",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 戴无菌手套注意，未戴之手触内面；外面是无菌区域，触碰即污染无疑。",
+        likes: 239
+      }
+    ]
   },
   {
     id: 31,
@@ -385,7 +599,14 @@ window.questions = [
     answer: 1,
     difficulty: 2,
     year: 2023,
-    keyPoint: "取放无菌持物钳时钳端必须闭合，防止污染"
+    keyPoint: "取放无菌持物钳时钳端必须闭合，防止污染",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 无菌持物钳使用，取放钳端要闭合；防止空气污染它，浸泡干放要合规。",
+        likes: 426
+      }
+    ]
   },
   {
     id: 32,
@@ -397,7 +618,14 @@ window.questions = [
     answer: 2,
     difficulty: 2,
     year: 2023,
-    keyPoint: "橡皮气圈易引起局部血液循环障碍，不宜使用"
+    keyPoint: "橡皮气圈易引起局部血液循环障碍，不宜使用",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 预防压疮要注意，橡皮气圈不宜用；影响局部血循环，反而加重压疮生。",
+        likes: 125
+      }
+    ]
   },
   {
     id: 33,
@@ -409,7 +637,14 @@ window.questions = [
     answer: 3,
     difficulty: 2,
     year: 2023,
-    keyPoint: "昏迷患者防窒息，棉球不可过湿，每次一个"
+    keyPoint: "昏迷患者防窒息，棉球不可过湿，每次一个",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 昏迷患者口腔护，棉球不可过湿透；一次一个夹紧用，防止窒息入气道。",
+        likes: 341
+      }
+    ]
   },
   {
     id: 34,
@@ -421,7 +656,14 @@ window.questions = [
     answer: 1,
     difficulty: 2,
     year: 2023,
-    keyPoint: "袖带过宽→血压偏低；袖带过窄→血压偏高"
+    keyPoint: "袖带过宽→血压偏低；袖带过窄→血压偏高",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 袖带宽窄影响压，过宽偏低窄偏高；合适的袖臂围半，测量准确误差消。",
+        likes: 233
+      }
+    ]
   },
   {
     id: 35,
@@ -433,7 +675,14 @@ window.questions = [
     answer: 1,
     difficulty: 1,
     year: 2023,
-    keyPoint: "桡动脉表浅易触及，是测量脉搏的首选部位"
+    keyPoint: "桡动脉表浅易触及，是测量脉搏的首选部位",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 测量脉搏选桡动，表浅易触最常用；颞动肱动足背动，特殊情况才选用。",
+        likes: 449
+      }
+    ]
   },
   {
     id: 36,
@@ -445,7 +694,14 @@ window.questions = [
     answer: 3,
     difficulty: 2,
     year: 2023,
-    keyPoint: "呼气性呼吸困难：小气道痉挛，见于支气管哮喘"
+    keyPoint: "呼气性呼吸困难：小气道痉挛，见于支气管哮喘",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 呼气性呼吸困难，小气道痉挛所致；支气管哮喘常见，吸气正常呼气难。",
+        likes: 357
+      }
+    ]
   },
   {
     id: 37,
@@ -457,7 +713,14 @@ window.questions = [
     answer: 0,
     difficulty: 2,
     year: 2023,
-    keyPoint: "三凹征：胸骨上窝、锁骨上窝、肋间隙吸气时凹陷"
+    keyPoint: "三凹征：胸骨上窝、锁骨上窝、肋间隙吸气时凹陷",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 三凹征吸气凹陷，胸骨上窝锁上肋间；上气道梗阻表现，呼吸困难明显现。",
+        likes: 286
+      }
+    ]
   },
   {
     id: 38,
@@ -469,7 +732,14 @@ window.questions = [
     answer: 3,
     difficulty: 2,
     year: 2023,
-    keyPoint: "大咯血：一次咯血>300ml，或24小时>500ml"
+    keyPoint: "大咯血：一次咯血>300ml，或24小时>500ml",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 大咯血一次三百，或二十四时五百；窒息风险很高危，抢救要及时迅速。",
+        likes: 212
+      }
+    ]
   },
   {
     id: 39,
@@ -481,7 +751,14 @@ window.questions = [
     answer: 3,
     difficulty: 3,
     year: 2023,
-    keyPoint: "网织红细胞反映骨髓造血功能，增高表示造血旺盛"
+    keyPoint: "网织红细胞反映骨髓造血功能，增高表示造血旺盛",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 网织红细胞计数，反映骨髓造血功；增高造血旺盛期，降低造血功能穷。",
+        likes: 214
+      }
+    ]
   },
   {
     id: 40,
@@ -493,7 +770,14 @@ window.questions = [
     answer: 0,
     difficulty: 3,
     year: 2023,
-    keyPoint: "内生肌酐清除率是最早反映GFR下降的敏感指标"
+    keyPoint: "内生肌酐清除率是最早反映GFR下降的敏感指标",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 肾小球滤过功能，内生肌酐清除敏；早期下降最先现，血肌酐尿素后来升。",
+        likes: 372
+      }
+    ]
   },
   {
     id: 41,
@@ -505,7 +789,14 @@ window.questions = [
     answer: 1,
     difficulty: 2,
     year: 2023,
-    keyPoint: "出血是消化性溃疡最常见并发症，约占15%-25%"
+    keyPoint: "出血是消化性溃疡最常见并发症，约占15%-25%",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 消化溃疡并发症，出血最常见要记；穿孔梗阻癌变少，黑便呕血是表现。",
+        likes: 209
+      }
+    ]
   },
   {
     id: 42,
@@ -517,7 +808,14 @@ window.questions = [
     answer: 1,
     difficulty: 2,
     year: 2023,
-    keyPoint: "血清总胆红素正常值<17.1μmol/L，17.1-34.2为隐性黄疸"
+    keyPoint: "血清总胆红素正常值<17.1μmol/L，17.1-34.2为隐性黄疸",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 总胆红素十七点一，超过此值黄疸疑；十七到三四隐性，大于三四显性期。",
+        likes: 434
+      }
+    ]
   },
   {
     id: 43,
@@ -529,7 +827,14 @@ window.questions = [
     answer: 0,
     difficulty: 4,
     year: 2024,
-    keyPoint: "EPSP：Na+内流为主，K+外流为辅，去极化"
+    keyPoint: "EPSP：Na+内流为主，K+外流为辅，去极化",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 兴奋突触后电位，钠钾通透钠为主；去极化后易兴奋，总和达到阈值发。",
+        likes: 184
+      }
+    ]
   },
   {
     id: 44,
@@ -541,7 +846,14 @@ window.questions = [
     answer: 2,
     difficulty: 3,
     year: 2023,
-    keyPoint: "白细胞渗出是炎症反应最重要的特征，是防御反应的中心环节"
+    keyPoint: "白细胞渗出是炎症反应最重要的特征，是防御反应的中心环节",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 炎症反应最重要，白细胞渗出是标；血管扩张血浆渗，白胞游出防御高。",
+        likes: 275
+      }
+    ]
   },
   {
     id: 45,
@@ -553,7 +865,14 @@ window.questions = [
     answer: 2,
     difficulty: 2,
     year: 2023,
-    keyPoint: "左心衰以肺循环淤血为主，典型表现为呼吸困难"
+    keyPoint: "左心衰以肺循环淤血为主，典型表现为呼吸困难",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 左心衰竭典型表，呼吸困难是首要；肺循环淤血致，端坐呼吸夜间扰。",
+        likes: 209
+      }
+    ]
   },
   {
     id: 46,
@@ -565,7 +884,14 @@ window.questions = [
     answer: 1,
     difficulty: 2,
     year: 2023,
-    keyPoint: "急性阑尾炎典型表现：转移性右下腹痛（先中上腹痛，后右下腹）"
+    keyPoint: "急性阑尾炎典型表现：转移性右下腹痛（先中上腹痛，后右下腹）",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 阑尾炎早期症，转移性右下腹痛；先中上后脐周痛，最后固定右下腹。",
+        likes: 267
+      }
+    ]
   },
   {
     id: 47,
@@ -577,7 +903,14 @@ window.questions = [
     answer: 2,
     difficulty: 3,
     year: 2024,
-    keyPoint: "Colles骨折：桡骨远端骨折，典型畸形银叉样+枪刺样"
+    keyPoint: "Colles骨折：桡骨远端骨折，典型畸形银叉样+枪刺样",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: Colles骨折桡骨端，银叉枪刺畸形现；远端向背侧移位，复位固定要及早。",
+        likes: 160
+      }
+    ]
   },
   {
     id: 48,
@@ -589,7 +922,14 @@ window.questions = [
     answer: 1,
     difficulty: 2,
     year: 2023,
-    keyPoint: "hCG妊娠8-10周达峰，随后下降，中晚期维持低水平"
+    keyPoint: "hCG妊娠8-10周达峰，随后下降，中晚期维持低水平",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: hCG水平高峰期，妊娠八到十周至；此后下降维持低，早孕诊断有价值。",
+        likes: 354
+      }
+    ]
   },
   {
     id: 49,
@@ -601,7 +941,14 @@ window.questions = [
     answer: 1,
     difficulty: 2,
     year: 2024,
-    keyPoint: "宫颈癌85%为鳞癌，与HPV感染密切相关"
+    keyPoint: "宫颈癌85%为鳞癌，与HPV感染密切相关",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 宫颈癌病理型，鳞状细胞最常见；HPV感染相关大，腺癌腺鳞少见些。",
+        likes: 412
+      }
+    ]
   },
   {
     id: 50,
@@ -613,7 +960,14 @@ window.questions = [
     answer: 1,
     difficulty: 1,
     year: 2023,
-    keyPoint: "生理性黄疸：生后2-3天出现，4-5天达峰；病理性：24小时内出现"
+    keyPoint: "生理性黄疸：生后2-3天出现，4-5天达峰；病理性：24小时内出现",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 生理性黄疸现，生后两到三天；四到五天最高峰，两周消退自然完。",
+        likes: 336
+      }
+    ]
   },
   {
     id: 51,
@@ -625,7 +979,14 @@ window.questions = [
     answer: 2,
     difficulty: 3,
     year: 2023,
-    keyPoint: "压住内环：斜疝不再突出，直疝仍可突出（核心鉴别点）"
+    keyPoint: "压住内环：斜疝不再突出，直疝仍可突出（核心鉴别点）",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 斜疝直疝鉴别点，压住内环看突出；斜疝不再直还出，手术路径也不同。",
+        likes: 409
+      }
+    ]
   },
   {
     id: 52,
@@ -637,7 +998,14 @@ window.questions = [
     answer: 1,
     difficulty: 2,
     year: 2024,
-    keyPoint: "糖尿病患者低血糖标准<3.9；普通人<2.8"
+    keyPoint: "糖尿病患者低血糖标准<3.9；普通人<2.8",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 糖尿病人低血糖，三点九是警戒线；心慌出汗手发抖，及时补糖防危险。",
+        likes: 282
+      }
+    ]
   },
   {
     id: 53,
@@ -649,7 +1017,14 @@ window.questions = [
     answer: 2,
     difficulty: 2,
     year: 2023,
-    keyPoint: "RA最早症状：关节疼痛、压痛（对称性小关节）"
+    keyPoint: "RA最早症状：关节疼痛、压痛（对称性小关节）",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 类风湿关节炎，最早关节痛压出现；对称性小关节起，晨僵明显要记牢。",
+        likes: 396
+      }
+    ]
   },
   {
     id: 54,
@@ -661,7 +1036,14 @@ window.questions = [
     answer: 1,
     difficulty: 3,
     year: 2024,
-    keyPoint: "脑梗死rt-PA溶栓：发病4.5小时内（黄金时间窗）"
+    keyPoint: "脑梗死rt-PA溶栓：发病4.5小时内（黄金时间窗）",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 脑梗死溶栓窗，四点五小时内是黄金；rtPA静脉给，时间越短效果越好。",
+        likes: 148
+      }
+    ]
   },
   {
     id: 55,
@@ -673,7 +1055,14 @@ window.questions = [
     answer: 2,
     difficulty: 3,
     year: 2023,
-    keyPoint: "HBV DNA是病毒复制和传染性最直接、最特异指标"
+    keyPoint: "HBV DNA是病毒复制和传染性最直接、最特异指标",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 乙肝复制传染标，HBV DNA最特异；定量检测看复制，抗病毒治疗监测要。",
+        likes: 284
+      }
+    ]
   },
   {
     id: 56,
@@ -685,7 +1074,14 @@ window.questions = [
     answer: 2,
     difficulty: 3,
     year: 2024,
-    keyPoint: "AMI早期死亡主因：室颤等心律失常（24小时内）"
+    keyPoint: "AMI早期死亡主因：室颤等心律失常（24小时内）",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 心梗早期死亡因，室颤心律失常主因；二十四小时内险，心电监测除颤备。",
+        likes: 447
+      }
+    ]
   },
   {
     id: 57,
@@ -697,7 +1093,14 @@ window.questions = [
     answer: 1,
     difficulty: 2,
     year: 2023,
-    keyPoint: "乳腺癌50%以上发生在外上象限（尾叶部位）"
+    keyPoint: "乳腺癌50%以上发生在外上象限（尾叶部位）",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 乳腺癌好发位，外上象限最常见；尾部组织较丰富，发现肿块要活检。",
+        likes: 426
+      }
+    ]
   },
   {
     id: 58,
@@ -709,7 +1112,14 @@ window.questions = [
     answer: 2,
     difficulty: 2,
     year: 2024,
-    keyPoint: "原位癌：癌细胞局限在黏膜上皮层内，未突破基底膜"
+    keyPoint: "原位癌：癌细胞局限在黏膜上皮层内，未突破基底膜",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 原位癌未突破，基底膜内局限；早期癌未转移，手术切除可治愈。",
+        likes: 152
+      }
+    ]
   },
   {
     id: 59,
@@ -721,7 +1131,14 @@ window.questions = [
     answer: 1,
     difficulty: 3,
     year: 2023,
-    keyPoint: "促胰液素：促进胰液分泌量多、HCO3-高、酶少；CCK：促进酶分泌"
+    keyPoint: "促胰液素：促进胰液分泌量多、HCO3-高、酶少；CCK：促进酶分泌",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 促胰液素作用，胰液量多酶少；碳酸氢盐高，中和胃酸保护肠。",
+        likes: 321
+      }
+    ]
   },
   {
     id: 60,
@@ -733,7 +1150,14 @@ window.questions = [
     answer: 1,
     difficulty: 3,
     year: 2024,
-    keyPoint: "HMG-CoA还原酶是胆固醇合成限速酶（他汀类药物作用靶点）"
+    keyPoint: "HMG-CoA还原酶是胆固醇合成限速酶（他汀类药物作用靶点）",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 胆固醇合成限，HMG还原酶是关；他汀药物作用点，抑制合成降胆固醇。",
+        likes: 249
+      }
+    ]
   },
   {
     id: 61,
@@ -745,7 +1169,14 @@ window.questions = [
     answer: 0,
     difficulty: 4,
     year: 2023,
-    keyPoint: "肺动脉高压形成：缺氧性肺血管收缩（最主要）、肺血管重构等"
+    keyPoint: "肺动脉高压形成：缺氧性肺血管收缩（最主要）、肺血管重构等",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 肺动脉高压成，缺氧收缩是主因；血管重构也参与，右心负荷因此增。",
+        likes: 163
+      }
+    ]
   },
   {
     id: 62,
@@ -757,7 +1188,14 @@ window.questions = [
     answer: 2,
     difficulty: 2,
     year: 2024,
-    keyPoint: "动脉粥样硬化分期：脂纹（最早）→纤维斑块→粥样斑块"
+    keyPoint: "动脉粥样硬化分期：脂纹（最早）→纤维斑块→粥样斑块",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 动脉粥样硬化，脂纹最早纤维继；粥样斑块后期形，血栓形成可闭塞。",
+        likes: 229
+      }
+    ]
   },
   {
     id: 63,
@@ -769,7 +1207,14 @@ window.questions = [
     answer: 0,
     difficulty: 2,
     year: 2023,
-    keyPoint: "急性胰腺炎：血清淀粉酶6-12小时开始升高，24小时达峰"
+    keyPoint: "急性胰腺炎：血清淀粉酶6-12小时开始升高，24小时达峰",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 急性胰腺炎诊，淀粉酶升六到十二；二十四小时高峰，持续三到五天值。",
+        likes: 353
+      }
+    ]
   },
   {
     id: 64,
@@ -781,7 +1226,14 @@ window.questions = [
     answer: 1,
     difficulty: 3,
     year: 2024,
-    keyPoint: "门脉高压→脾大→脾功能亢进→全血细胞减少（脾亢破坏血细胞）"
+    keyPoint: "门脉高压→脾大→脾功能亢进→全血细胞减少（脾亢破坏血细胞）",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 肝硬化血细胞，减少脾亢是主因；门脉高压脾肿大，破坏血细胞功能强。",
+        likes: 401
+      }
+    ]
   },
   {
     id: 65,
@@ -793,7 +1245,14 @@ window.questions = [
     answer: 2,
     difficulty: 3,
     year: 2023,
-    keyPoint: "股骨颈骨折：旋股内、外侧动脉损伤→股骨头缺血坏死（最常见并发症）"
+    keyPoint: "股骨颈骨折：旋股内、外侧动脉损伤→股骨头缺血坏死（最常见并发症）",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 股骨颈骨折后，坏死最常见并发；血供损伤难修复，置换手术要考虑。",
+        likes: 379
+      }
+    ]
   },
   {
     id: 66,
@@ -805,7 +1264,14 @@ window.questions = [
     answer: 1,
     difficulty: 2,
     year: 2024,
-    keyPoint: "软组织损伤早期：冷敷（止血、减轻肿胀）；48小时后热敷（促进吸收）"
+    keyPoint: "软组织损伤早期：冷敷（止血、减轻肿胀）；48小时后热敷（促进吸收）",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 软组织损伤初，四十八时内冷敷；止血消肿止痛好，过后热敷促进复。",
+        likes: 194
+      }
+    ]
   },
   {
     id: 67,
@@ -817,7 +1283,14 @@ window.questions = [
     answer: 1,
     difficulty: 2,
     year: 2023,
-    keyPoint: "肝硬化腹水：限水<1000ml/d（低钠血症者<500ml），限钠<2g/d"
+    keyPoint: "肝硬化腹水：限水<1000ml/d（低钠血症者<500ml），限钠<2g/d",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 肝硬化腹水期，限水一千毫升日；低钠血症五百限，限钠也是必须施。",
+        likes: 257
+      }
+    ]
   },
   {
     id: 68,
@@ -829,7 +1302,14 @@ window.questions = [
     answer: 0,
     difficulty: 2,
     year: 2024,
-    keyPoint: "硬膜外/腰麻后：去枕平卧6-8小时，防脑脊液外漏致头痛"
+    keyPoint: "硬膜外/腰麻后：去枕平卧6-8小时，防脑脊液外漏致头痛",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 硬膜外腰麻后，去枕平卧六到八；脑脊液外漏防，头痛发生要避免。",
+        likes: 279
+      }
+    ]
   },
   {
     id: 69,
@@ -841,7 +1321,14 @@ window.questions = [
     answer: 0,
     difficulty: 2,
     year: 2023,
-    keyPoint: "COPD长期氧疗：低流量1-2L/min，>15h/d，防CO2潴留"
+    keyPoint: "COPD长期氧疗：低流量1-2L/min，>15h/d，防CO2潴留",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: COPD氧疗低流量，一到二升每分钟；高流量氧抑制呼吸，二氧化碳潴留更凶。",
+        likes: 322
+      }
+    ]
   },
   {
     id: 70,
@@ -853,7 +1340,14 @@ window.questions = [
     answer: 2,
     difficulty: 1,
     year: 2024,
-    keyPoint: "大量不保留灌肠：成人500-1000ml，小儿200-500ml，温度39-41℃"
+    keyPoint: "大量不保留灌肠：成人500-1000ml，小儿200-500ml，温度39-41℃",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 大量灌肠成人量，五百到一千毫升；温度三九到四一，过快过猛要避免。",
+        likes: 258
+      }
+    ]
   },
   {
     id: 71,
@@ -865,7 +1359,14 @@ window.questions = [
     answer: 2,
     difficulty: 3,
     year: 2023,
-    keyPoint: "烧伤补液：第一个24小时总量一半在前8小时输入（快后慢）"
+    keyPoint: "烧伤补液：第一个24小时总量一半在前8小时输入（快后慢）",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 烧伤补液计算，第一个八时一半；后十六时另一半，先快后慢原则在。",
+        likes: 257
+      }
+    ]
   },
   {
     id: 72,
@@ -877,7 +1378,14 @@ window.questions = [
     answer: 1,
     difficulty: 2,
     year: 2024,
-    keyPoint: "正常破膜：第一产程活跃期（宫口近开全时）；提前破膜为胎膜早破"
+    keyPoint: "正常破膜：第一产程活跃期（宫口近开全时）；提前破膜为胎膜早破",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 正常破膜时间，第一产程活跃期；宫口近开全破，提前破膜是早破。",
+        likes: 198
+      }
+    ]
   },
   {
     id: 73,
@@ -889,7 +1397,14 @@ window.questions = [
     answer: 2,
     difficulty: 1,
     year: 2023,
-    keyPoint: "Apgar五项：心率、呼吸、肌张力、喉反射、皮肤颜色（无体温）"
+    keyPoint: "Apgar五项：心率、呼吸、肌张力、喉反射、皮肤颜色（无体温）",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: Apgar评五项，心率呼吸肌张；喉反射皮肤色，体温不包括在内。",
+        likes: 442
+      }
+    ]
   },
   {
     id: 74,
@@ -901,7 +1416,14 @@ window.questions = [
     answer: 2,
     difficulty: 1,
     year: 2024,
-    keyPoint: "硝酸甘油：舌下含服（避免首过效应），5分钟未缓解可再服"
+    keyPoint: "硝酸甘油：舌下含服（避免首过效应），5分钟未缓解可再服",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 心绞痛硝酸甘，舌下含服效果快；首过效应要避免，五分钟效不缓解再。",
+        likes: 308
+      }
+    ]
   },
   {
     id: 75,
@@ -913,7 +1435,14 @@ window.questions = [
     answer: 1,
     difficulty: 2,
     year: 2023,
-    keyPoint: "洋地黄类：服药前测脉搏，<60次/分或节律不齐应停药并报告医生"
+    keyPoint: "洋地黄类：服药前测脉搏，<60次/分或节律不齐应停药并报告医生",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 洋地黄类药前，脉搏测量要先行；六十次分以下停，节律不齐也报告。",
+        likes: 387
+      }
+    ]
   },
   {
     id: 76,
@@ -925,7 +1454,14 @@ window.questions = [
     answer: 2,
     difficulty: 3,
     year: 2023,
-    keyPoint: "COPD急性加重主因是感染，控制感染是最重要的治疗措施"
+    keyPoint: "COPD急性加重主因是感染，控制感染是最重要的治疗措施",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: COPD急性加，感染是主因；控制感染最重要，抗生素选择要准。",
+        likes: 373
+      }
+    ]
   },
   {
     id: 77,
@@ -937,7 +1473,14 @@ window.questions = [
     answer: 1,
     difficulty: 3,
     year: 2022,
-    keyPoint: "急性左心衰+快房颤：首选洋地黄类（西地兰），既强心又减慢心率"
+    keyPoint: "急性左心衰+快房颤：首选洋地黄类（西地兰），既强心又减慢心率",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 急性左心衰并房颤，西地兰是首选；强心利尿又减慢，控制心率效果显。",
+        likes: 323
+      }
+    ]
   },
   {
     id: 78,
@@ -949,7 +1492,14 @@ window.questions = [
     answer: 0,
     difficulty: 3,
     year: 2023,
-    keyPoint: "术后48小时内最危急：切口内出血→气管受压→呼吸困难、窒息"
+    keyPoint: "术后48小时内最危急：切口内出血→气管受压→呼吸困难、窒息",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 甲状腺术后危，呼吸困难窒息最；四十八时内出血，气管受压要及时切。",
+        likes: 131
+      }
+    ]
   },
   {
     id: 79,
@@ -961,7 +1511,14 @@ window.questions = [
     answer: 3,
     difficulty: 3,
     year: 2024,
-    keyPoint: "胃溃疡手术指征：难治性、穿孔、出血、梗阻、癌变；小溃疡药物可治"
+    keyPoint: "胃溃疡手术指征：难治性、穿孔、出血、梗阻、癌变；小溃疡药物可治",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 胃溃疡手术征，内科治疗不愈行；穿孔出血癌变并，梗阻也是适应证。",
+        likes: 205
+      }
+    ]
   },
   {
     id: 80,
@@ -973,7 +1530,14 @@ window.questions = [
     answer: 2,
     difficulty: 2,
     year: 2023,
-    keyPoint: "前置胎盘：B超确诊（准确率高、安全），禁做阴道检查（防大出血）"
+    keyPoint: "前置胎盘：B超确诊（准确率高、安全），禁做阴道检查（防大出血）",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 前置胎盘诊断，B超检查最安全；明确位置类型，阴道检查要避免。",
+        likes: 162
+      }
+    ]
   },
   {
     id: 81,
@@ -985,7 +1549,14 @@ window.questions = [
     answer: 1,
     difficulty: 2,
     year: 2022,
-    keyPoint: "佝偻病激期：典型骨骼改变（方颅、鸡胸、O型腿等）"
+    keyPoint: "佝偻病激期：典型骨骼改变（方颅、鸡胸、O型腿等）",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 佝偻病激期表，骨骼改变是主要；方颅鸡胸O型腿，骨软体征都出现。",
+        likes: 130
+      }
+    ]
   },
   {
     id: 82,
@@ -997,7 +1568,14 @@ window.questions = [
     answer: 2,
     difficulty: 2,
     year: 2023,
-    keyPoint: "脑出血70%发生在基底节区（壳核），因豆纹动脉破裂所致"
+    keyPoint: "脑出血70%发生在基底节区（壳核），因豆纹动脉破裂所致",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 脑出血最常见，基底节区七成占；豆纹动脉破裂致，三偏症状明显现。",
+        likes: 310
+      }
+    ]
   },
   {
     id: 83,
@@ -1009,7 +1587,14 @@ window.questions = [
     answer: 1,
     difficulty: 3,
     year: 2024,
-    keyPoint: "伤寒并发症：肠出血（最常见）、肠穿孔（最严重，好发于病程2-3周）"
+    keyPoint: "伤寒并发症：肠出血（最常见）、肠穿孔（最严重，好发于病程2-3周）",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 伤寒并发症多，肠出血最常见说；肠穿孔最严重，二三周时要警惕。",
+        likes: 365
+      }
+    ]
   },
   {
     id: 84,
@@ -1021,7 +1606,14 @@ window.questions = [
     answer: 2,
     difficulty: 2,
     year: 2023,
-    keyPoint: "精神分裂症：幻听最常见（尤其是言语性幻听），评论性、命令性幻听有诊断意义"
+    keyPoint: "精神分裂症：幻听最常见（尤其是言语性幻听），评论性、命令性幻听有诊断意义",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 精神分裂症幻，听觉最常见幻听；评论命令有诊断，妄想也常见要记。",
+        likes: 343
+      }
+    ]
   },
   {
     id: 85,
@@ -1033,7 +1625,14 @@ window.questions = [
     answer: 1,
     difficulty: 2,
     year: 2024,
-    keyPoint: "上消化道出血最常见病因：消化性溃疡（50%左右），其次为食管胃底静脉曲张"
+    keyPoint: "上消化道出血最常见病因：消化性溃疡（50%左右），其次为食管胃底静脉曲张",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 上消化道出血，消化溃疡最常见；食管胃底静脉破，急性胃炎胃癌少。",
+        likes: 449
+      }
+    ]
   },
   {
     id: 86,
@@ -1045,7 +1644,14 @@ window.questions = [
     answer: 1,
     difficulty: 2,
     year: 2023,
-    keyPoint: "肾绞痛+血尿：典型肾结石/输尿管结石表现"
+    keyPoint: "肾绞痛+血尿：典型肾结石/输尿管结石表现",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 肾绞痛加血尿，结石首先考虑；超声CT可确诊，止痛解痉排石治。",
+        likes: 398
+      }
+    ]
   },
   {
     id: 87,
@@ -1057,7 +1663,14 @@ window.questions = [
     answer: 1,
     difficulty: 2,
     year: 2024,
-    keyPoint: "肝硬化病理特征：假小叶形成（正常肝小叶结构被破坏，形成假小叶）"
+    keyPoint: "肝硬化病理特征：假小叶形成（正常肝小叶结构被破坏，形成假小叶）",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 肝硬化病理征，假小叶形成特征；正常结构破坏尽，纤维间隔包绕成。",
+        likes: 412
+      }
+    ]
   },
   {
     id: 88,
@@ -1069,7 +1682,14 @@ window.questions = [
     answer: 0,
     difficulty: 2,
     year: 2023,
-    keyPoint: "血糖升高是胰岛素分泌最主要刺激因素（负反馈调节）"
+    keyPoint: "血糖升高是胰岛素分泌最主要刺激因素（负反馈调节）",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 胰岛素分泌调，血糖升高主刺激；负反馈调节机制，降糖作用因此起。",
+        likes: 145
+      }
+    ]
   },
   {
     id: 89,
@@ -1081,7 +1701,14 @@ window.questions = [
     answer: 2,
     difficulty: 3,
     year: 2024,
-    keyPoint: "酶蛋白决定酶的特异性（结合底物），辅酶/辅基决定反应类型"
+    keyPoint: "酶蛋白决定酶的特异性（结合底物），辅酶/辅基决定反应类型",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 酶特异性决定，酶蛋白是主因；结合底物特异性，辅酶辅基定反应型。",
+        likes: 162
+      }
+    ]
   },
   {
     id: 90,
@@ -1093,7 +1720,14 @@ window.questions = [
     answer: 3,
     difficulty: 3,
     year: 2023,
-    keyPoint: "房颤：P波消失代之以f波，RR绝对不齐；QRS宽大畸形是室性心律失常特点"
+    keyPoint: "房颤：P波消失代之以f波，RR绝对不齐；QRS宽大畸形是室性心律失常特点",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 房颤心电图特，P波消失f波出；RR间期不规则，QRS不宽大畸形。",
+        likes: 216
+      }
+    ]
   },
   {
     id: 91,
@@ -1105,7 +1739,14 @@ window.questions = [
     answer: 2,
     difficulty: 3,
     year: 2024,
-    keyPoint: "肝性脑病禁用肥皂水（碱性）灌肠，会加重氨吸收；宜用弱酸性溶液"
+    keyPoint: "肝性脑病禁用肥皂水（碱性）灌肠，会加重氨吸收；宜用弱酸性溶液",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 肝性脑病灌肠，肥皂水要禁用；碱性环境氨吸收，弱酸灌肠才适宜。",
+        likes: 284
+      }
+    ]
   },
   {
     id: 92,
@@ -1117,7 +1758,14 @@ window.questions = [
     answer: 2,
     difficulty: 3,
     year: 2023,
-    keyPoint: "T管引流量突然减少：首先检查引流管是否受压、扭曲、堵塞"
+    keyPoint: "T管引流量突然减少：首先检查引流管是否受压、扭曲、堵塞",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: T管引流减少，首先检查受压否；扭曲堵塞要排除，再考虑功能问题。",
+        likes: 283
+      }
+    ]
   },
   {
     id: 93,
@@ -1129,7 +1777,14 @@ window.questions = [
     answer: 0,
     difficulty: 3,
     year: 2024,
-    keyPoint: "硫酸镁中毒顺序：膝反射消失→呼吸抑制→心跳骤停；监测膝反射最重要"
+    keyPoint: "硫酸镁中毒顺序：膝反射消失→呼吸抑制→心跳骤停；监测膝反射最重要",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 硫酸镁中毒先，膝反射消失最先；继而呼吸受抑制，心跳骤停要防范。",
+        likes: 134
+      }
+    ]
   },
   {
     id: 94,
@@ -1141,7 +1796,14 @@ window.questions = [
     answer: 3,
     difficulty: 2,
     year: 2023,
-    keyPoint: "营养不良皮下脂肪减少顺序：腹部→躯干→臀部→四肢→面部"
+    keyPoint: "营养不良皮下脂肪减少顺序：腹部→躯干→臀部→四肢→面部",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 营养不良脂肪减，腹部最先开始减；然后躯干臀四肢，面部最后才出现。",
+        likes: 247
+      }
+    ]
   },
   {
     id: 95,
@@ -1153,7 +1815,14 @@ window.questions = [
     answer: 0,
     difficulty: 3,
     year: 2024,
-    keyPoint: "空气栓塞：左侧卧位+头低足高，使气泡浮向右心室尖部，避开肺动脉入口"
+    keyPoint: "空气栓塞：左侧卧位+头低足高，使气泡浮向右心室尖部，避开肺动脉入口",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 空气栓塞危急，左侧头低足高卧；气泡浮右心室尖，肺动脉入口避过。",
+        likes: 395
+      }
+    ]
   },
   {
     id: 96,
@@ -1165,7 +1834,14 @@ window.questions = [
     answer: 0,
     difficulty: 2,
     year: 2023,
-    keyPoint: "甲亢代谢亢进：需高热量、高蛋白、高维生素饮食，补充消耗"
+    keyPoint: "甲亢代谢亢进：需高热量、高蛋白、高维生素饮食，补充消耗",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 甲亢代谢亢进，高热量高蛋白维；补充消耗需要，饮食护理很重要。",
+        likes: 297
+      }
+    ]
   },
   {
     id: 97,
@@ -1177,7 +1853,14 @@ window.questions = [
     answer: 0,
     difficulty: 3,
     year: 2024,
-    keyPoint: "骨折早期（1-2周）：肌肉等长收缩（静力收缩），防肌肉萎缩；中期开始关节活动"
+    keyPoint: "骨折早期（1-2周）：肌肉等长收缩（静力收缩），防肌肉萎缩；中期开始关节活动",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 骨折早期锻炼，肌肉等长收缩练；关节不动肌肉动，防萎缩血栓很重要。",
+        likes: 230
+      }
+    ]
   },
   {
     id: 98,
@@ -1189,7 +1872,14 @@ window.questions = [
     answer: 2,
     difficulty: 2,
     year: 2023,
-    keyPoint: "正常恶露持续4-6周，总量250-500ml；血性恶露3-4天，浆液性10天，白色3周"
+    keyPoint: "正常恶露持续4-6周，总量250-500ml；血性恶露3-4天，浆液性10天，白色3周",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 产后恶露持续，四到六周正常；血性浆液白色，总量五百毫升上。",
+        likes: 293
+      }
+    ]
   },
   {
     id: 99,
@@ -1201,7 +1891,14 @@ window.questions = [
     answer: 1,
     difficulty: 2,
     year: 2024,
-    keyPoint: "成人CPR：按压通气比30:2（单人/双人相同）；儿童双人施救15:2"
+    keyPoint: "成人CPR：按压通气比30:2（单人/双人相同）；儿童双人施救15:2",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 心肺复苏比例，三十比二按压气；成人单双人均同，儿童双人十五比。",
+        likes: 350
+      }
+    ]
   },
   {
     id: 100,
@@ -1213,7 +1910,14 @@ window.questions = [
     answer: 0,
     difficulty: 2,
     year: 2023,
-    keyPoint: "严密隔离（鼠疫、霍乱等）：排泄物用含氯消毒剂消毒后排放"
+    keyPoint: "严密隔离（鼠疫、霍乱等）：排泄物用含氯消毒剂消毒后排放",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 严密隔离消毒，含氯消毒剂使用；排泄物处理后排，霍乱鼠疫此标准。",
+        likes: 252
+      }
+    ]
   },
   {
     id: 101,
@@ -1225,7 +1929,14 @@ window.questions = [
     answer: 2,
     difficulty: 2,
     year: 2024,
-    keyPoint: "慢性胃炎90%以上由幽门螺杆菌感染引起"
+    keyPoint: "慢性胃炎90%以上由幽门螺杆菌感染引起",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 慢性胃炎病因，幽门螺杆菌主因；九成人因此病，根除治疗可根治。",
+        likes: 276
+      }
+    ]
   },
   {
     id: 102,
@@ -1237,7 +1948,14 @@ window.questions = [
     answer: 0,
     difficulty: 3,
     year: 2023,
-    keyPoint: "头下型骨折：旋股内、外侧动脉分支损伤最重，股骨头缺血坏死率最高"
+    keyPoint: "头下型骨折：旋股内、外侧动脉分支损伤最重，股骨头缺血坏死率最高",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 股骨颈骨折型，头下型预后最差；血供破坏最重，坏死发生率最高。",
+        likes: 374
+      }
+    ]
   },
   {
     id: 103,
@@ -1249,7 +1967,14 @@ window.questions = [
     answer: 0,
     difficulty: 2,
     year: 2024,
-    keyPoint: "内异症80%累及卵巢，形成卵巢巧克力囊肿"
+    keyPoint: "内异症80%累及卵巢，形成卵巢巧克力囊肿",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 子宫内膜异位，卵巢最常累及；巧克力囊肿形，痛经不孕症状齐。",
+        likes: 351
+      }
+    ]
   },
   {
     id: 104,
@@ -1261,7 +1986,14 @@ window.questions = [
     answer: 2,
     difficulty: 3,
     year: 2023,
-    keyPoint: "肺炎：通气/换气障碍→缺氧+CO2潴留→各系统功能障碍"
+    keyPoint: "肺炎：通气/换气障碍→缺氧+CO2潴留→各系统功能障碍",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 小儿肺炎病理，缺氧CO2潴留；通气换气障碍，各系统功能受影响。",
+        likes: 410
+      }
+    ]
   },
   {
     id: 105,
@@ -1273,7 +2005,14 @@ window.questions = [
     answer: 1,
     difficulty: 3,
     year: 2024,
-    keyPoint: "GBS：自身免疫介导的周围神经节段性脱髓鞘"
+    keyPoint: "GBS：自身免疫介导的周围神经节段性脱髓鞘",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 吉兰巴雷综合，节段脱髓鞘病理；自身免疫攻击，周围神经损害起。",
+        likes: 427
+      }
+    ]
   },
   {
     id: 106,
@@ -1285,7 +2024,14 @@ window.questions = [
     answer: 2,
     difficulty: 3,
     year: 2023,
-    keyPoint: "乙脑：脑实质炎症→中枢性呼吸衰竭（最主要死因）"
+    keyPoint: "乙脑：脑实质炎症→中枢性呼吸衰竭（最主要死因）",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 乙型脑炎死因，呼吸衰竭最主要；脑实质炎症致，中枢呼吸衰竭来。",
+        likes: 157
+      }
+    ]
   },
   {
     id: 107,
@@ -1297,7 +2043,14 @@ window.questions = [
     answer: 2,
     difficulty: 2,
     year: 2024,
-    keyPoint: "抑郁症核心症状：情绪低落、兴趣减退、快感缺失"
+    keyPoint: "抑郁症核心症状：情绪低落、兴趣减退、快感缺失",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 抑郁症核心症，情绪低落兴趣失；快感缺失伴随，三无三自要警惕。",
+        likes: 148
+      }
+    ]
   },
   {
     id: 108,
@@ -1309,7 +2062,14 @@ window.questions = [
     answer: 1,
     difficulty: 3,
     year: 2023,
-    keyPoint: "补铁有效最早表现：网织红细胞5-10天开始升高，2周后血红蛋白上升"
+    keyPoint: "补铁有效最早表现：网织红细胞5-10天开始升高，2周后血红蛋白上升",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 补铁治疗有效，网织红最先反应；五到十天开始升，血红蛋白二周后。",
+        likes: 137
+      }
+    ]
   },
   {
     id: 109,
@@ -1321,7 +2081,14 @@ window.questions = [
     answer: 0,
     difficulty: 2,
     year: 2024,
-    keyPoint: "颅内压增高三主征：头痛、呕吐、视乳头水肿"
+    keyPoint: "颅内压增高三主征：头痛、呕吐、视乳头水肿",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 颅内压增高征，三主征要记清；头痛呕吐视乳头，水肿眼底镜检查。",
+        likes: 318
+      }
+    ]
   },
   {
     id: 110,
@@ -1333,7 +2100,14 @@ window.questions = [
     answer: 0,
     difficulty: 2,
     year: 2023,
-    keyPoint: "风湿性心脏病：二尖瓣最常受累（70%），其次为主动脉瓣"
+    keyPoint: "风湿性心脏病：二尖瓣最常受累（70%），其次为主动脉瓣",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 风湿性心脏病，二尖瓣最常累及；主动脉瓣次之，狭窄关闭不全齐。",
+        likes: 229
+      }
+    ]
   },
   {
     id: 111,
@@ -1345,7 +2119,14 @@ window.questions = [
     answer: 0,
     difficulty: 2,
     year: 2024,
-    keyPoint: "肺通气直接动力：肺内压与大气压之差；原动力：呼吸肌收缩"
+    keyPoint: "肺通气直接动力：肺内压与大气压之差；原动力：呼吸肌收缩",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 肺通气动力有，直接压力差来；肺内大气压差，原动力呼吸肌。",
+        likes: 210
+      }
+    ]
   },
   {
     id: 112,
@@ -1357,7 +2138,14 @@ window.questions = [
     answer: 0,
     difficulty: 3,
     year: 2023,
-    keyPoint: "酮体在肝细胞线粒体生成，肝外组织（心、肾、脑、肌）利用"
+    keyPoint: "酮体在肝细胞线粒体生成，肝外组织（心、肾、脑、肌）利用",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 酮体生成部位，肝细胞线粒体；肝内生成肝外用，心肾脑肌可利用。",
+        likes: 252
+      }
+    ]
   },
   {
     id: 113,
@@ -1369,7 +2157,14 @@ window.questions = [
     answer: 1,
     difficulty: 2,
     year: 2024,
-    keyPoint: "肌钙蛋白（cTnI/cTnT）：心肌损伤特异性最高，AMI首选标志物"
+    keyPoint: "肌钙蛋白（cTnI/cTnT）：心肌损伤特异性最高，AMI首选标志物",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 心肌坏死标志，肌钙蛋白特异高；AMI首选指标，早期升高持续久。",
+        likes: 240
+      }
+    ]
   },
   {
     id: 114,
@@ -1381,7 +2176,14 @@ window.questions = [
     answer: 1,
     difficulty: 3,
     year: 2023,
-    keyPoint: "哮喘急性发作：过度通气→PaCO2降低→呼吸性碱中毒；严重时CO2潴留→呼酸"
+    keyPoint: "哮喘急性发作：过度通气→PaCO2降低→呼吸性碱中毒；严重时CO2潴留→呼酸",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 哮喘急性发作，过度通气呼碱；CO2排出过多，PaCO2降低是。",
+        likes: 312
+      }
+    ]
   },
   {
     id: 115,
@@ -1393,7 +2195,14 @@ window.questions = [
     answer: 1,
     difficulty: 3,
     year: 2024,
-    keyPoint: "硬膜外血肿典型表现：中间清醒期（昏迷→清醒→再昏迷）"
+    keyPoint: "硬膜外血肿典型表现：中间清醒期（昏迷→清醒→再昏迷）",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 硬膜外血肿典，中间清醒期特征；昏迷清醒再昏迷，颅内压增高进展。",
+        likes: 439
+      }
+    ]
   },
   {
     id: 116,
@@ -1405,7 +2214,14 @@ window.questions = [
     answer: 2,
     difficulty: 2,
     year: 2023,
-    keyPoint: "临产标志：规律宫缩（持续30s以上，间歇5-6min）+进行性宫颈管消失+宫口扩张"
+    keyPoint: "临产标志：规律宫缩（持续30s以上，间歇5-6min）+进行性宫颈管消失+宫口扩张",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 临产标志有，规律宫缩是主；间隔五六分钟，持续三十秒以上。",
+        likes: 206
+      }
+    ]
   },
   {
     id: 117,
@@ -1417,7 +2233,14 @@ window.questions = [
     answer: 1,
     difficulty: 3,
     year: 2024,
-    keyPoint: "足月儿>342μmol/L（20mg/dl）易致胆红素脑病（核黄疸）"
+    keyPoint: "足月儿>342μmol/L（20mg/dl）易致胆红素脑病（核黄疸）",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 核黄疸危险值，胆红素三四二；足月儿此水平，血脑屏障易穿透。",
+        likes: 375
+      }
+    ]
   },
   {
     id: 118,
@@ -1429,7 +2252,14 @@ window.questions = [
     answer: 2,
     difficulty: 2,
     year: 2023,
-    keyPoint: "成人鼻饲插管长度：前额发际至胸骨剑突处，或鼻尖经耳垂至剑突，约45-55cm"
+    keyPoint: "成人鼻饲插管长度：前额发际至胸骨剑突处，或鼻尖经耳垂至剑突，约45-55cm",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 鼻饲插管长度，发际到胸骨剑突；大约四十五到五十五，确认胃内再灌注。",
+        likes: 411
+      }
+    ]
   },
   {
     id: 119,
@@ -1441,7 +2271,14 @@ window.questions = [
     answer: 1,
     difficulty: 2,
     year: 2024,
-    keyPoint: "心脏骤停诊断：意识丧失+大动脉搏动消失（颈动脉、股动脉）"
+    keyPoint: "心脏骤停诊断：意识丧失+大动脉搏动消失（颈动脉、股动脉）",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 心脏骤停诊断，大动脉搏动消失；颈动股动触不到，意识丧失呼吸停。",
+        likes: 199
+      }
+    ]
   },
   {
     id: 120,
@@ -1453,7 +2290,14 @@ window.questions = [
     answer: 2,
     difficulty: 3,
     year: 2023,
-    keyPoint: "腹部损伤观察期禁用吗啡止痛，以免掩盖病情"
+    keyPoint: "腹部损伤观察期禁用吗啡止痛，以免掩盖病情",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 腹部损伤观察，吗啡止痛要禁；掩盖病情变化，延误诊断危险。",
+        likes: 154
+      }
+    ]
   },
   {
     id: 121,
@@ -1465,7 +2309,14 @@ window.questions = [
     answer: 3,
     difficulty: 2,
     year: 2024,
-    keyPoint: "产后10天子宫降至盆腔，腹部触不到宫底；产后6周恢复至非孕大小"
+    keyPoint: "产后10天子宫降至盆腔，腹部触不到宫底；产后6周恢复至非孕大小",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 产后子宫复旧，十天降至盆腔；腹部触不到底，六周恢复正常。",
+        likes: 325
+      }
+    ]
   },
   {
     id: 122,
@@ -1477,7 +2328,14 @@ window.questions = [
     answer: 1,
     difficulty: 2,
     year: 2023,
-    keyPoint: "婴儿4-6个月开始添加辅食（体重达6.5-7kg，能扶坐）"
+    keyPoint: "婴儿4-6个月开始添加辅食（体重达6.5-7kg，能扶坐）",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 婴儿辅食添加，四到六月适宜；体重达标能扶坐，消化能力已具备。",
+        likes: 334
+      }
+    ]
   },
   {
     id: 123,
@@ -1489,7 +2347,14 @@ window.questions = [
     answer: 2,
     difficulty: 3,
     year: 2024,
-    keyPoint: "有机磷中毒烟碱样症状：肌束颤动、肌无力；毒蕈碱样：瞳孔缩小、流涎、肺水肿"
+    keyPoint: "有机磷中毒烟碱样症状：肌束颤动、肌无力；毒蕈碱样：瞳孔缩小、流涎、肺水肿",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 有机磷中毒征，烟碱样肌束颤；肌肉收缩颤动，肌无力麻痹现。",
+        likes: 289
+      }
+    ]
   },
   {
     id: 124,
@@ -1501,7 +2366,14 @@ window.questions = [
     answer: 1,
     difficulty: 2,
     year: 2023,
-    keyPoint: "血培养：一般血培养采血5ml；亚急性细菌性心内膜炎采血10-15ml"
+    keyPoint: "血培养：一般血培养采血5ml；亚急性细菌性心内膜炎采血10-15ml",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 血培养采血量，一般五毫升即可；亚急性心内膜炎，十到十五毫升采。",
+        likes: 124
+      }
+    ]
   },
   {
     id: 125,
@@ -1513,6 +2385,13 @@ window.questions = [
     answer: 1,
     difficulty: 2,
     year: 2024,
-    keyPoint: "慢性肾炎血压控制目标<130/80mmHg，以减少尿蛋白、保护肾功能"
+    keyPoint: "慢性肾炎血压控制目标<130/80mmHg，以减少尿蛋白、保护肾功能",
+    comments: [
+      {
+        author: "@协和学习",
+        content: "口诀: 慢性肾炎血压，控制目标一三零；比八零要降低，保护肾功能重要。",
+        likes: 410
+      }
+    ]
   }
 ];
