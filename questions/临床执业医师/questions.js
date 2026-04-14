@@ -943,4 +943,83 @@ window._questionParts["临床执业医师"] = [
     keyPoint: "妊娠期高血压疾病核心在于血压升高及器官受累，蛋白尿是重要指标。",
     comments: [{ author: "@题库更新", content: "口诀: 子痫前期三要点，高压蛋白要盯紧。", likes: 38 }]
   }
+,
+{
+    id: 159,
+    examType: "临床执业医师",
+    subject: "医学伦理学",
+    chapter: "医学伦理原则",
+    question: "医学伦理学中“有利原则”强调医务人员应当？",
+    options: ["尊重患者隐私", "尽可能促进患者健康利益", "公平分配卫生资源", "避免法律纠纷"],
+    answer: 1,
+    difficulty: 2,
+    year: 2026,
+    keyPoint: "有利原则要求临床决策以患者利益最大化为导向，并兼顾不伤害。",
+    comments: [{ author: "@题库更新", content: "口诀: 有利不伤害，先把病人放首位。", likes: 24 }]
+  },
+{
+    id: 160,
+    examType: "临床执业医师",
+    subject: "卫生法规",
+    chapter: "执业管理",
+    question: "医师执业活动中，以下哪项属于必须履行的法定义务？",
+    options: ["拒绝危重患者", "保护患者隐私和个人信息", "自行发布虚假疗效广告", "超范围开展诊疗"],
+    answer: 1,
+    difficulty: 2,
+    year: 2026,
+    keyPoint: "依法保护患者隐私是医师法定义务，违反可承担行政或法律责任。",
+    comments: [{ author: "@题库更新", content: "口诀: 医疗信息要保密，法律底线不能碰。", likes: 26 }]
+  },
+{
+    id: 161,
+    examType: "临床执业医师",
+    subject: "医学心理学",
+    chapter: "医患沟通",
+    question: "与焦虑患者沟通时最恰当的首要做法是？",
+    options: ["立即打断其表达", "先倾听并共情，再进行解释", "仅强调检查结果", "建议其自行调整情绪"],
+    answer: 1,
+    difficulty: 2,
+    year: 2026,
+    keyPoint: "有效沟通先建立信任，倾听和共情是缓解焦虑、提高依从性的关键。",
+    comments: [{ author: "@题库更新", content: "口诀: 沟通先听后说，先共情再宣教。", likes: 23 }]
+  },
+{
+    id: 162,
+    examType: "临床执业医师",
+    subject: "预防医学",
+    chapter: "三级预防",
+    question: "高血压患者规律服药并随访，属于哪一级预防？",
+    options: ["一级预防", "二级预防", "三级预防", "病因预防"],
+    answer: 2,
+    difficulty: 2,
+    year: 2026,
+    keyPoint: "三级预防强调对已患病个体减少并发症、致残和死亡，改善预后。",
+    comments: [{ author: "@题库更新", content: "口诀: 已病防残是三级，早筛早诊是二级。", likes: 21 }]
+  },
+{
+    id: 163,
+    examType: "临床执业医师",
+    subject: "中医学基础",
+    chapter: "辨证",
+    question: "“望闻问切”在中医临床中属于？",
+    options: ["治疗原则", "诊法", "方剂分类", "针灸手法"],
+    answer: 1,
+    difficulty: 1,
+    year: 2026,
+    keyPoint: "望闻问切是中医四诊，核心作用是收集信息并进行辨证。",
+    comments: [{ author: "@题库更新", content: "口诀: 望闻问切四诊全，辨证论治第一关。", likes: 25 }]
+  },
+{
+    id: 164,
+    examType: "临床执业医师",
+    subject: "药理学",
+    chapter: "抗菌药物",
+    question: "使用抗菌药物时，最关键的合理用药原则是？",
+    options: ["联合用药越多越好", "尽量长期预防性应用", "根据病原学和药敏结果选药", "症状缓解后立即停药"],
+    answer: 2,
+    difficulty: 3,
+    year: 2026,
+    keyPoint: "抗菌药物应基于病原学证据和药敏结果，兼顾疗效、不良反应与耐药风险。",
+    comments: [{ author: "@题库更新", content: "口诀: 抗菌先找病原体，药敏指导更精准。", likes: 22 }]
+  }
 ];

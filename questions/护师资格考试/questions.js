@@ -1243,4 +1243,83 @@ window._questionParts["护师资格考试"] = [
     keyPoint: "成人CPR胸外按压频率推荐100-120次/分，同时保证按压深度和回弹。",
     comments: [{ author: "@题库更新", content: "口诀: 成人按压一百到一百二，频率深度都要顾。", likes: 30 }]
   }
+,
+{
+    id: 171,
+    examType: "护师资格考试",
+    subject: "护理管理",
+    chapter: "护理安全",
+    question: "护理不良事件上报的基本原则是？",
+    options: ["隐瞒不报", "及时、客观、完整上报", "仅上报严重事件", "口头通知即可"],
+    answer: 1,
+    difficulty: 2,
+    year: 2026,
+    keyPoint: "不良事件管理重在及时上报、原因分析和持续改进。",
+    comments: [{ author: "@题库更新", content: "口诀: 事件不怕报，怕的是不改。", likes: 14 }]
+  },
+{
+    id: 172,
+    examType: "护师资格考试",
+    subject: "护理伦理与法规",
+    chapter: "职业规范",
+    question: "护士在工作中发现患者隐私泄露风险，首先应？",
+    options: ["忽略处理", "及时采取保护措施并报告", "向其他患者讨论", "在社交平台提醒家属"],
+    answer: 1,
+    difficulty: 2,
+    year: 2026,
+    keyPoint: "保护患者隐私是护士的法定义务和伦理要求，发现风险应立即干预。",
+    comments: [{ author: "@题库更新", content: "口诀: 病人隐私要上锁，发现风险先止损。", likes: 13 }]
+  },
+{
+    id: 173,
+    examType: "护师资格考试",
+    subject: "健康教育",
+    chapter: "宣教方法",
+    question: "健康教育中评估教育效果最直接的方法是？",
+    options: ["只发宣传资料", "观察患者是否能复述并正确操作", "仅记录宣教时间", "反复播放视频不提问"],
+    answer: 1,
+    difficulty: 2,
+    year: 2026,
+    keyPoint: "教育效果应通过“会不会做、能不能说清楚”来验证，强调反馈闭环。",
+    comments: [{ author: "@题库更新", content: "口诀: 宣教看结果，会讲会做才算过。", likes: 15 }]
+  },
+{
+    id: 174,
+    examType: "护师资格考试",
+    subject: "心理护理",
+    chapter: "沟通技巧",
+    question: "对焦虑住院患者进行心理护理时，首要是？",
+    options: ["限制其表达", "倾听并给予情绪支持", "直接批评其情绪化", "减少沟通避免刺激"],
+    answer: 1,
+    difficulty: 2,
+    year: 2026,
+    keyPoint: "心理护理强调建立信任关系，倾听与支持有助于缓解焦虑和提高依从性。",
+    comments: [{ author: "@题库更新", content: "口诀: 焦虑先安情绪，再谈治疗细节。", likes: 14 }]
+  },
+{
+    id: 175,
+    examType: "护师资格考试",
+    subject: "社区护理",
+    chapter: "慢病管理",
+    question: "社区高血压管理中最核心的长期策略是？",
+    options: ["仅靠短期住院治疗", "规律随访+生活方式干预+规范用药", "只在症状时就诊", "停药后观察"],
+    answer: 1,
+    difficulty: 2,
+    year: 2026,
+    keyPoint: "慢病社区管理重在连续性：随访、宣教、行为干预与药物依从。",
+    comments: [{ author: "@题库更新", content: "口诀: 慢病管理靠长期，随访宣教加用药。", likes: 13 }]
+  },
+{
+    id: 176,
+    examType: "护师资格考试",
+    subject: "中医护理",
+    chapter: "基础理论",
+    question: "中医护理中“辨证施护”强调的是？",
+    options: ["所有患者同一方案", "根据证候特点实施个体化护理", "仅按西医诊断执行", "只做生活护理不观察病情"],
+    answer: 1,
+    difficulty: 2,
+    year: 2026,
+    keyPoint: "辨证施护是中医护理核心思想，强调同病异护、异病同护的个体化实施。",
+    comments: [{ author: "@题库更新", content: "口诀: 护理看证不看名，个体施护更精准。", likes: 12 }]
+  }
 ];

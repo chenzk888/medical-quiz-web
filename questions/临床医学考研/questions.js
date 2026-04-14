@@ -863,4 +863,83 @@ window._questionParts["临床医学考研"] = [
     keyPoint: "尿量是反映肾灌注和有效循环恢复的简便敏感指标之一。",
     comments: [{ author: "@题库更新", content: "口诀: 休克复苏看尿量，持续回升是好信号。", likes: 33 }]
   }
+,
+{
+    id: 165,
+    examType: "临床医学考研",
+    subject: "临床医学人文精神",
+    chapter: "医患沟通",
+    question: "临床沟通中“告知同意”的核心是？",
+    options: ["医生单方面决定", "患者在充分知情基础上自主决策", "家属代替所有决定", "以节省时间为第一目标"],
+    answer: 1,
+    difficulty: 2,
+    year: 2026,
+    keyPoint: "知情同意强调信息充分、理解充分和患者自主选择。",
+    comments: [{ author: "@题库更新", content: "口诀: 知情+理解+自愿，才是同意真要点。", likes: 19 }]
+  },
+{
+    id: 166,
+    examType: "临床医学考研",
+    subject: "骨科学",
+    chapter: "骨折总论",
+    question: "骨折特有体征中最有诊断意义的是？",
+    options: ["局部压痛", "肿胀瘀斑", "反常活动", "功能障碍"],
+    answer: 2,
+    difficulty: 2,
+    year: 2026,
+    keyPoint: "骨折特有体征包括反常活动、骨擦感（音）和畸形，其中反常活动提示价值高。",
+    comments: [{ author: "@题库更新", content: "口诀: 骨折三特征，畸形骨擦反常动。", likes: 22 }]
+  },
+{
+    id: 167,
+    examType: "临床医学考研",
+    subject: "免疫学",
+    chapter: "超敏反应",
+    question: "过敏性休克属于哪型超敏反应？",
+    options: ["I型", "II型", "III型", "IV型"],
+    answer: 0,
+    difficulty: 2,
+    year: 2026,
+    keyPoint: "I型超敏反应由IgE介导，起病快，可致过敏性休克。",
+    comments: [{ author: "@题库更新", content: "口诀: 速发过敏看IgE，一型反应最典型。", likes: 18 }]
+  },
+{
+    id: 168,
+    examType: "临床医学考研",
+    subject: "药理学",
+    chapter: "受体药理",
+    question: "阿托品主要通过阻断哪类受体发挥作用？",
+    options: ["α受体", "β受体", "M胆碱受体", "N胆碱受体"],
+    answer: 2,
+    difficulty: 2,
+    year: 2026,
+    keyPoint: "阿托品为M胆碱受体阻断药，可抑制腺体分泌并解除平滑肌痉挛。",
+    comments: [{ author: "@题库更新", content: "口诀: 阿托品抗M，抑分泌解痉挛。", likes: 20 }]
+  },
+{
+    id: 169,
+    examType: "临床医学考研",
+    subject: "病理生理学",
+    chapter: "缺氧",
+    question: "低张性缺氧最主要的血氧变化是？",
+    options: ["动脉血氧分压降低", "静脉血氧分压升高", "血红蛋白总量升高", "组织氧耗明显下降"],
+    answer: 0,
+    difficulty: 3,
+    year: 2026,
+    keyPoint: "低张性缺氧的核心是PaO2下降，常见于高原或呼吸系统通气换气障碍。",
+    comments: [{ author: "@题库更新", content: "口诀: 低张缺氧先看压，动脉氧分压先下滑。", likes: 17 }]
+  },
+{
+    id: 170,
+    examType: "临床医学考研",
+    subject: "医学伦理学",
+    chapter: "伦理原则",
+    question: "“公平原则”在临床实践中主要体现为？",
+    options: ["优先满足熟人需求", "按支付能力分配医疗资源", "公平合理分配有限医疗资源", "仅考虑治疗效果最大化"],
+    answer: 2,
+    difficulty: 2,
+    year: 2026,
+    keyPoint: "公平原则强调机会公平与资源合理分配，避免歧视和不当优先。",
+    comments: [{ author: "@题库更新", content: "口诀: 医疗资源要公平，不看身份不看钱。", likes: 16 }]
+  }
 ];
