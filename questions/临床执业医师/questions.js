@@ -763,4 +763,105 @@ window._questionParts["临床执业医师"] = [
       }
     ]
   }
+,
+
+{
+    id: 126,
+    examType: "临床执业医师",
+    subject: "内科学",
+    chapter: "循环系统",
+    question: "左心衰竭最早出现的典型症状是？",
+    options: ["端坐呼吸", "劳力性呼吸困难", "咳粉红色泡沫痰", "双下肢水肿"],
+    answer: 1,
+    difficulty: 2,
+    year: 2026,
+    keyPoint: "左心衰早期以劳力性呼吸困难最常见，病情加重可出现端坐呼吸和夜间阵发性呼吸困难。",
+    comments: [
+      {
+        author: "@题库更新",
+        content: "口诀: 左心衰先劳力喘，夜间端坐是加重；粉红泡沫到肺水肿，分层记忆不混淆。",
+        likes: 66
+      }
+    ]
+  },
+
+{
+    id: 127,
+    examType: "临床执业医师",
+    subject: "内科学",
+    chapter: "呼吸系统",
+    question: "COPD患者合并Ⅱ型呼吸衰竭时，血气分析常见为？",
+    options: ["PaO2下降，PaCO2下降", "PaO2升高，PaCO2升高", "PaO2下降，PaCO2升高", "PaO2正常，PaCO2下降"],
+    answer: 2,
+    difficulty: 3,
+    year: 2026,
+    keyPoint: "Ⅱ型呼吸衰竭特征是低氧血症并高碳酸血症，即PaO2<60mmHg且PaCO2>50mmHg。",
+    comments: [
+      {
+        author: "@题库更新",
+        content: "口诀: 二型衰竭双异常，氧低二氧化碳高；看见高碳酸血症，先想通气不足。",
+        likes: 58
+      }
+    ]
+  },
+
+{
+    id: 128,
+    examType: "临床执业医师",
+    subject: "内科学",
+    chapter: "消化系统",
+    question: "消化性溃疡最主要的病因是？",
+    options: ["长期精神紧张", "幽门螺杆菌感染", "高盐饮食", "NSAIDs短期使用"],
+    answer: 1,
+    difficulty: 2,
+    year: 2026,
+    keyPoint: "幽门螺杆菌感染是消化性溃疡最重要病因，根除治疗可明显降低复发率。",
+    comments: [
+      {
+        author: "@题库更新",
+        content: "口诀: 溃疡反复总难好，先查幽门螺杆菌；根除治疗打基础，复发风险明显低。",
+        likes: 72
+      }
+    ]
+  },
+
+{
+    id: 129,
+    examType: "临床执业医师",
+    subject: "内科学",
+    chapter: "消化系统",
+    question: "急性胰腺炎诊断中更具特异性的实验室指标是？",
+    options: ["血清淀粉酶", "血清脂肪酶", "ALT", "总胆红素"],
+    answer: 1,
+    difficulty: 3,
+    year: 2026,
+    keyPoint: "血清脂肪酶对急性胰腺炎特异性更高，升高持续时间也通常较淀粉酶更长。",
+    comments: [
+      {
+        author: "@题库更新",
+        content: "口诀: 胰腺炎看两酶，淀粉升得早，脂肪更特异；临床结合腹痛影像一起判。",
+        likes: 49
+      }
+    ]
+  },
+
+{
+    id: 130,
+    examType: "临床执业医师",
+    subject: "心电图",
+    chapter: "心律失常",
+    question: "阵发性室上性心动过速发作时，首选可尝试的急救处理是？",
+    options: ["立即静推肾上腺素", "先行迷走神经刺激法", "常规电复律", "长期口服利多卡因"],
+    answer: 1,
+    difficulty: 3,
+    year: 2026,
+    keyPoint: "PSVT发作时首选先行迷走神经刺激（如Valsalva法）；无效再考虑药物或同步电复律。",
+    comments: [
+      {
+        author: "@题库更新",
+        content: "口诀: 室上速先刺激迷走，Valsalva先走一轮；无效再上药或电，处理步骤要分层。",
+        likes: 64
+      }
+    ]
+  }
 ];

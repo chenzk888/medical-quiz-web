@@ -683,4 +683,105 @@ window._questionParts["临床医学考研"] = [
       }
     ]
   }
+,
+
+{
+    id: 131,
+    examType: "临床医学考研",
+    subject: "生理学",
+    chapter: "呼吸生理",
+    question: "下列哪项最能直接反映肺泡通气是否足够？",
+    options: ["PaO2", "SaO2", "PaCO2", "肺活量"],
+    answer: 2,
+    difficulty: 3,
+    year: 2026,
+    keyPoint: "PaCO2主要受肺泡通气影响，是评价肺泡通气是否充分的重要指标。",
+    comments: [
+      {
+        author: "@题库更新",
+        content: "口诀: 通气看二氧化碳，氧分压还受换气面；PaCO2升高多提示通气不全。",
+        likes: 45
+      }
+    ]
+  },
+
+{
+    id: 132,
+    examType: "临床医学考研",
+    subject: "病理学",
+    chapter: "炎症",
+    question: "急性炎症最具特征性的血管反应是？",
+    options: ["血管收缩为主", "血管扩张和通透性增高", "毛细血管闭塞", "新生血管大量形成"],
+    answer: 1,
+    difficulty: 2,
+    year: 2026,
+    keyPoint: "急性炎症核心变化包括血管扩张、通透性增加和白细胞渗出。",
+    comments: [
+      {
+        author: "@题库更新",
+        content: "口诀: 急性炎症三件事，血管扩张渗出增；再加白细胞游走，红肿热痛由此生。",
+        likes: 53
+      }
+    ]
+  },
+
+{
+    id: 133,
+    examType: "临床医学考研",
+    subject: "生物化学",
+    chapter: "糖代谢",
+    question: "糖酵解过程中，底物水平磷酸化生成ATP发生在？",
+    options: ["葡萄糖→葡萄糖-6-磷酸", "果糖-6-磷酸→果糖-1,6-二磷酸", "1,3-二磷酸甘油酸→3-磷酸甘油酸", "丙酮酸→乳酸"],
+    answer: 2,
+    difficulty: 3,
+    year: 2026,
+    keyPoint: "糖酵解中1,3-BPG到3-PG以及PEP到丙酮酸均可经底物水平磷酸化生成ATP。",
+    comments: [
+      {
+        author: "@题库更新",
+        content: "口诀: 糖酵解产ATP，底物水平两步记；1,3-BPG和PEP，都是高能中间体。",
+        likes: 39
+      }
+    ]
+  },
+
+{
+    id: 134,
+    examType: "临床医学考研",
+    subject: "内科学",
+    chapter: "呼吸系统",
+    question: "支气管哮喘急性发作早期最常见的酸碱平衡紊乱是？",
+    options: ["呼吸性酸中毒", "呼吸性碱中毒", "代谢性酸中毒", "代谢性碱中毒"],
+    answer: 1,
+    difficulty: 2,
+    year: 2026,
+    keyPoint: "哮喘急性发作早期常因过度通气导致PaCO2下降，出现呼吸性碱中毒。",
+    comments: [
+      {
+        author: "@题库更新",
+        content: "口诀: 哮喘早期先过通，二氧化碳先下降；早碱晚酸看病程，监测血气最关键。",
+        likes: 47
+      }
+    ]
+  },
+
+{
+    id: 135,
+    examType: "临床医学考研",
+    subject: "外科学",
+    chapter: "体液代谢",
+    question: "等渗性缺水时，首先减少的体液是？",
+    options: ["细胞内液", "血浆量和组织间液", "脑脊液", "细胞内外液等量减少但血浆不变"],
+    answer: 1,
+    difficulty: 3,
+    year: 2026,
+    keyPoint: "等渗性缺水主要丢失细胞外液，表现为血容量不足，可致循环灌注下降。",
+    comments: [
+      {
+        author: "@题库更新",
+        content: "口诀: 等渗丢的是细胞外，先看血浆和间液；补液首选等渗盐，恢复循环是第一。",
+        likes: 42
+      }
+    ]
+  }
 ];

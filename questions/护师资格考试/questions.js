@@ -1063,4 +1063,105 @@ window._questionParts["护师资格考试"] = [
       }
     ]
   }
+,
+
+{
+    id: 136,
+    examType: "护师资格考试",
+    subject: "基础护理学",
+    chapter: "护理程序",
+    question: "护理程序的首要步骤是？",
+    options: ["护理诊断", "护理计划", "护理评估", "护理评价"],
+    answer: 2,
+    difficulty: 1,
+    year: 2026,
+    keyPoint: "护理程序按评估、诊断、计划、实施、评价进行，评估是首要环节。",
+    comments: [
+      {
+        author: "@题库更新",
+        content: "口诀: 护理程序五步走，评估先行最开头；后面诊断做计划，实施评价再收尾。",
+        likes: 51
+      }
+    ]
+  },
+
+{
+    id: 137,
+    examType: "护师资格考试",
+    subject: "外科护理学",
+    chapter: "麻醉护理",
+    question: "全身麻醉患者未清醒前最重要的护理措施是？",
+    options: ["鼓励饮水", "保持呼吸道通畅", "尽早下床活动", "拔除静脉通路"],
+    answer: 1,
+    difficulty: 2,
+    year: 2026,
+    keyPoint: "全麻未清醒期应重点防误吸和窒息，保持呼吸道通畅是首要措施。",
+    comments: [
+      {
+        author: "@题库更新",
+        content: "口诀: 全麻未醒先护气道，侧头防呕吐误吸；先保命后谈其他，优先级别要记牢。",
+        likes: 47
+      }
+    ]
+  },
+
+{
+    id: 138,
+    examType: "护师资格考试",
+    subject: "妇产科护理学",
+    chapter: "妊娠期",
+    question: "推算预产期最常用的依据是？",
+    options: ["末次月经来潮第一天", "末次月经干净第一天", "早孕反应出现时间", "首次胎动日期"],
+    answer: 0,
+    difficulty: 2,
+    year: 2026,
+    keyPoint: "预产期常按末次月经来潮第一天推算：月份减3或加9，日期加7。",
+    comments: [
+      {
+        author: "@题库更新",
+        content: "口诀: 预产期先看末次经，月份减三或加九；日期再加七天算，临床估算最常用。",
+        likes: 55
+      }
+    ]
+  },
+
+{
+    id: 139,
+    examType: "护师资格考试",
+    subject: "儿科护理学",
+    chapter: "新生儿护理",
+    question: "生理性黄疸在足月儿最常见的出现时间是生后？",
+    options: ["24小时内", "2-3天", "7-10天", "2周后"],
+    answer: 1,
+    difficulty: 2,
+    year: 2026,
+    keyPoint: "足月儿生理性黄疸多在生后2-3天出现，4-5天达峰，约1-2周消退。",
+    comments: [
+      {
+        author: "@题库更新",
+        content: "口诀: 生理黄疸二三天，四五高峰一两周退；若24小时内就黄，要先警惕病理性。",
+        likes: 62
+      }
+    ]
+  },
+
+{
+    id: 140,
+    examType: "护师资格考试",
+    subject: "内科护理学",
+    chapter: "消化系统",
+    question: "肝硬化腹水患者在护理中通常需限制每日入水量为？",
+    options: ["500ml以内", "1000ml以内", "1500ml以内", "2500ml以内"],
+    answer: 1,
+    difficulty: 3,
+    year: 2026,
+    keyPoint: "肝硬化腹水常限制入水量约1000ml/d，合并严重低钠血症时需更严格限制。",
+    comments: [
+      {
+        author: "@题库更新",
+        content: "口诀: 腹水护理先限水，一千毫升做基准；若有低钠更从严，配合限钠同管理。",
+        likes: 46
+      }
+    ]
+  }
 ];
