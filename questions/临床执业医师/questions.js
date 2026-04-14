@@ -864,4 +864,83 @@ window._questionParts["临床执业医师"] = [
       }
     ]
   }
+,
+{
+    id: 141,
+    examType: "临床执业医师",
+    subject: "内科学",
+    chapter: "循环系统",
+    question: "高血压的诊断标准（非同日3次测量）是？",
+    options: ["SBP≥130和/或DBP≥80mmHg", "SBP≥140和/或DBP≥90mmHg", "SBP≥150和/或DBP≥95mmHg", "SBP≥160和/或DBP≥100mmHg"],
+    answer: 1,
+    difficulty: 2,
+    year: 2026,
+    keyPoint: "我国成人高血压诊断常用标准为收缩压>=140mmHg和/或舒张压>=90mmHg。",
+    comments: [{ author: "@题库更新", content: "口诀: 高压一四零，低压九十整；两者有其一，也算高血压。", likes: 36 }]
+  },
+{
+    id: 142,
+    examType: "临床执业医师",
+    subject: "内科学",
+    chapter: "呼吸系统",
+    question: "确诊肺结核最可靠的依据是？",
+    options: ["胸片示空洞", "结核菌素试验阳性", "痰结核分枝杆菌阳性", "午后低热盗汗"],
+    answer: 2,
+    difficulty: 2,
+    year: 2026,
+    keyPoint: "病原学证据是结核确诊关键，痰菌阳性最具诊断价值。",
+    comments: [{ author: "@题库更新", content: "口诀: 结核症状可提示，痰菌阳性才坐实。", likes: 33 }]
+  },
+{
+    id: 143,
+    examType: "临床执业医师",
+    subject: "内科学",
+    chapter: "消化系统",
+    question: "上消化道出血最常见的临床表现是？",
+    options: ["腹泻", "便秘", "呕血和（或）黑便", "黄疸"],
+    answer: 2,
+    difficulty: 2,
+    year: 2026,
+    keyPoint: "上消化道出血典型表现为呕血和黑便，失血量大可出现休克征象。",
+    comments: [{ author: "@题库更新", content: "口诀: 上消化道出血，先看呕血黑便。", likes: 31 }]
+  },
+{
+    id: 144,
+    examType: "临床执业医师",
+    subject: "外科学",
+    chapter: "急腹症",
+    question: "急性阑尾炎最常见的典型转移性腹痛顺序为？",
+    options: ["右下腹→上腹", "脐周或上腹→右下腹", "全腹→左下腹", "左下腹→右下腹"],
+    answer: 1,
+    difficulty: 2,
+    year: 2026,
+    keyPoint: "阑尾炎疼痛常先脐周（内脏痛），后转至右下腹麦氏点（壁腹膜受刺激）。",
+    comments: [{ author: "@题库更新", content: "口诀: 阑尾炎痛先中后右，转移痛最经典。", likes: 42 }]
+  },
+{
+    id: 145,
+    examType: "临床执业医师",
+    subject: "神经病学",
+    chapter: "脑血管病",
+    question: "脑出血最常见的发病部位是？",
+    options: ["脑桥", "小脑", "基底节区", "枕叶"],
+    answer: 2,
+    difficulty: 3,
+    year: 2026,
+    keyPoint: "高血压性脑出血最常发生于壳核等基底节区。",
+    comments: [{ author: "@题库更新", content: "口诀: 高压脑出血，基底节最常。", likes: 35 }]
+  },
+{
+    id: 146,
+    examType: "临床执业医师",
+    subject: "妇产科学",
+    chapter: "产科",
+    question: "先兆子痫最主要的临床表现是？",
+    options: ["高热、寒战、腹痛", "高血压、蛋白尿和（或）水肿", "阴道流血、腹痛", "胎动减少、宫缩乏力"],
+    answer: 1,
+    difficulty: 3,
+    year: 2026,
+    keyPoint: "妊娠期高血压疾病核心在于血压升高及器官受累，蛋白尿是重要指标。",
+    comments: [{ author: "@题库更新", content: "口诀: 子痫前期三要点，高压蛋白要盯紧。", likes: 38 }]
+  }
 ];

@@ -784,4 +784,83 @@ window._questionParts["临床医学考研"] = [
       }
     ]
   }
+,
+{
+    id: 147,
+    examType: "临床医学考研",
+    subject: "生理学",
+    chapter: "循环生理",
+    question: "心输出量的计算公式是？",
+    options: ["每搏量×心率", "收缩压×心率", "舒张压×心率", "脉压×心率"],
+    answer: 0,
+    difficulty: 1,
+    year: 2026,
+    keyPoint: "心输出量=每搏输出量×心率，是反映心泵功能的重要指标。",
+    comments: [{ author: "@题库更新", content: "口诀: 心排量看两项，每搏乘上心率。", likes: 28 }]
+  },
+{
+    id: 148,
+    examType: "临床医学考研",
+    subject: "生理学",
+    chapter: "肾生理",
+    question: "机体调节酸碱平衡最快的缓冲系统是？",
+    options: ["肾脏排酸保碱", "血液缓冲系统", "骨骼缓冲", "细胞外液转运"],
+    answer: 1,
+    difficulty: 3,
+    year: 2026,
+    keyPoint: "血液缓冲系统起效最快，呼吸调节次之，肾脏调节最慢但作用最强。",
+    comments: [{ author: "@题库更新", content: "口诀: 缓冲最快在血里，呼吸快、肾最稳。", likes: 29 }]
+  },
+{
+    id: 149,
+    examType: "临床医学考研",
+    subject: "病理学",
+    chapter: "肿瘤",
+    question: "恶性肿瘤最本质的生物学特征是？",
+    options: ["生长迅速", "细胞异型性明显", "浸润和转移", "坏死出血常见"],
+    answer: 2,
+    difficulty: 2,
+    year: 2026,
+    keyPoint: "浸润与转移决定恶性肿瘤临床危害和预后，是核心特征。",
+    comments: [{ author: "@题库更新", content: "口诀: 良恶分界看转移，浸润扩散最关键。", likes: 34 }]
+  },
+{
+    id: 150,
+    examType: "临床医学考研",
+    subject: "生物化学",
+    chapter: "氨基酸代谢",
+    question: "体内氨的主要解毒途径是？",
+    options: ["转氨作用", "氧化脱氨", "尿素合成", "酮体生成"],
+    answer: 2,
+    difficulty: 2,
+    year: 2026,
+    keyPoint: "肝脏尿素循环是清除氨毒性最主要途径。",
+    comments: [{ author: "@题库更新", content: "口诀: 氨毒要想安全排，关键还看尿素环。", likes: 27 }]
+  },
+{
+    id: 151,
+    examType: "临床医学考研",
+    subject: "内科学",
+    chapter: "血液系统",
+    question: "缺铁性贫血最常见的外周血象改变是？",
+    options: ["大细胞高色素", "小细胞低色素", "正细胞正色素", "网织红细胞显著增高"],
+    answer: 1,
+    difficulty: 2,
+    year: 2026,
+    keyPoint: "缺铁性贫血典型表现为MCV、MCH下降，即小细胞低色素性贫血。",
+    comments: [{ author: "@题库更新", content: "口诀: 缺铁贫血看红细胞，小而淡最典型。", likes: 30 }]
+  },
+{
+    id: 152,
+    examType: "临床医学考研",
+    subject: "外科学",
+    chapter: "休克",
+    question: "休克复苏中反映组织灌注改善较早的指标是？",
+    options: ["血红蛋白", "白细胞计数", "尿量", "血小板计数"],
+    answer: 2,
+    difficulty: 3,
+    year: 2026,
+    keyPoint: "尿量是反映肾灌注和有效循环恢复的简便敏感指标之一。",
+    comments: [{ author: "@题库更新", content: "口诀: 休克复苏看尿量，持续回升是好信号。", likes: 33 }]
+  }
 ];

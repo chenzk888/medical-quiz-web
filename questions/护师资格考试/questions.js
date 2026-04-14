@@ -1164,4 +1164,83 @@ window._questionParts["护师资格考试"] = [
       }
     ]
   }
+,
+{
+    id: 153,
+    examType: "护师资格考试",
+    subject: "基础护理学",
+    chapter: "无菌技术",
+    question: "无菌物品一经污染应如何处理？",
+    options: ["擦拭后继续使用", "高压灭菌后当天可用", "视污染程度决定", "立即按污染物处理并更换"],
+    answer: 3,
+    difficulty: 1,
+    year: 2026,
+    keyPoint: "无菌物品污染后不得继续用于无菌操作，应立即更换。",
+    comments: [{ author: "@题库更新", content: "口诀: 无菌一污染，立刻就更换。", likes: 26 }]
+  },
+{
+    id: 154,
+    examType: "护师资格考试",
+    subject: "内科护理学",
+    chapter: "呼吸系统",
+    question: "COPD患者长期氧疗推荐的吸氧方式是？",
+    options: ["高流量持续吸氧", "低流量持续吸氧", "间断高浓度吸氧", "仅夜间短时吸氧"],
+    answer: 1,
+    difficulty: 2,
+    year: 2026,
+    keyPoint: "COPD长期家庭氧疗通常采用低流量、低浓度、长时间吸氧。",
+    comments: [{ author: "@题库更新", content: "口诀: 慢阻肺氧疗慢慢给，低流量更安全。", likes: 29 }]
+  },
+{
+    id: 155,
+    examType: "护师资格考试",
+    subject: "外科护理学",
+    chapter: "围手术期",
+    question: "术后深静脉血栓预防中最基础有效的措施是？",
+    options: ["绝对卧床", "早期下床活动", "常规大量输液", "禁食禁饮"],
+    answer: 1,
+    difficulty: 2,
+    year: 2026,
+    keyPoint: "术后早期活动可促进下肢静脉回流，是DVT预防的重要措施。",
+    comments: [{ author: "@题库更新", content: "口诀: 术后防血栓，早动最关键。", likes: 31 }]
+  },
+{
+    id: 156,
+    examType: "护师资格考试",
+    subject: "妇产科护理学",
+    chapter: "分娩期",
+    question: "宫口开全是指宫口扩张约为？",
+    options: ["6cm", "8cm", "10cm", "12cm"],
+    answer: 2,
+    difficulty: 2,
+    year: 2026,
+    keyPoint: "第一产程末宫口开全约10cm，提示进入第二产程。",
+    comments: [{ author: "@题库更新", content: "口诀: 宫口开全十公分，第二产程要开始。", likes: 28 }]
+  },
+{
+    id: 157,
+    examType: "护师资格考试",
+    subject: "儿科护理学",
+    chapter: "液体疗法",
+    question: "小儿轻度脱水时，体重减少约为？",
+    options: ["3%以下", "3%-5%", "5%-10%", "10%以上"],
+    answer: 1,
+    difficulty: 3,
+    year: 2026,
+    keyPoint: "小儿轻度脱水约失水3%-5%，中度约5%-10%，重度>10%。",
+    comments: [{ author: "@题库更新", content: "口诀: 轻脱三到五，中脱五到十，重脱超十。", likes: 27 }]
+  },
+{
+    id: 158,
+    examType: "护师资格考试",
+    subject: "急救护理",
+    chapter: "心肺复苏",
+    question: "成人单人心肺复苏按压频率推荐为？",
+    options: ["60-80次/分", "80-100次/分", "100-120次/分", "120-140次/分"],
+    answer: 2,
+    difficulty: 2,
+    year: 2026,
+    keyPoint: "成人CPR胸外按压频率推荐100-120次/分，同时保证按压深度和回弹。",
+    comments: [{ author: "@题库更新", content: "口诀: 成人按压一百到一百二，频率深度都要顾。", likes: 30 }]
+  }
 ];
