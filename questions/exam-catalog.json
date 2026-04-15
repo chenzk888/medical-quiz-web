@@ -1,0 +1,59 @@
+{
+  "version": "2.0",
+  "categories": [
+    {
+      "id": "physician",
+      "name": "医师资格",
+      "icon": "👨‍⚕️",
+      "exams": [
+        {"id": "clinical-physician", "name": "临床执业医师", "file": "医师资格/clinical-physician.json", "count": 0},
+        {"id": "clinical-assistant", "name": "临床助理医师", "file": "医师资格/clinical-assistant.json", "count": 0},
+        {"id": "tcm-physician", "name": "中医执业医师", "file": "医师资格/tcm-physician.json", "count": 0},
+        {"id": "tcm-assistant", "name": "中医助理医师", "file": "医师资格/tcm-assistant.json", "count": 0},
+        {"id": "stomatology", "name": "口腔执业医师", "file": "医师资格/stomatology.json", "count": 0},
+        {"id": "public-health", "name": "公卫执业医师", "file": "医师资格/public-health.json", "count": 0}
+      ]
+    },
+    {
+      "id": "nursing",
+      "name": "护理类",
+      "icon": "👩‍⚕️",
+      "exams": [
+        {"id": "nurse-license", "name": "护士执业资格", "file": "护理资格/nurse-license.json", "count": 50},
+        {"id": "junior-nurse", "name": "初级护师", "file": "护理资格/junior-nurse.json", "count": 125},
+        {"id": "senior-nurse", "name": "主管护师", "file": "护理资格/senior-nurse.json", "count": 0},
+        {"id": "obgyn-nurse", "name": "妇产科护理学", "file": "护理资格/ob-gyn-nurse.json", "count": 0}
+      ]
+    },
+    {
+      "id": "pharmacy",
+      "name": "药学类",
+      "icon": "💊",
+      "exams": [
+        {"id": "pharmacist-western", "name": "执业药师（西药）", "file": "药学资格/pharmacist-western.json", "count": 50},
+        {"id": "pharmacist-tcm", "name": "执业药师（中药）", "file": "药学资格/pharmacist-tcm.json", "count": 0},
+        {"id": "hospital-pharmacy", "name": "医院药学职称", "file": "药学资格/hospital-pharmacist.json", "count": 0}
+      ]
+    },
+    {
+      "id": "technician",
+      "name": "医疗技术",
+      "icon": "🔬",
+      "exams": [
+        {"id": "lab-tech", "name": "临床医学检验技术", "file": "医技资格/lab-technician.json", "count": 0},
+        {"id": "imaging-tech", "name": "医学影像技术", "file": "医技资格/imaging-technician.json", "count": 0},
+        {"id": "rehab-tech", "name": "康复治疗技术", "file": "医技资格/rehab-technician.json", "count": 0},
+        {"id": "pathology-tech", "name": "病理学技术", "file": "医技资格/pathology-tech.json", "count": 0}
+      ]
+    },
+    {
+      "id": "postgraduate",
+      "name": "考研/招聘",
+      "icon": "📚",
+      "exams": [
+        {"id": "clinical-pg", "name": "临床医学考研", "file": "西医考研/clinical.json", "count": 0},
+        {"id": "western-pg", "name": "西医综合考研", "file": "西医考研/western-med.json", "count": 0}
+      ]
+    }
+  ]
+}
